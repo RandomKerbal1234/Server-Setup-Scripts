@@ -1,0 +1,46 @@
+# Redacted reference copy. The real compose file with credentials is in
+# secrets/docker/guac-mysql/docker-compose.yml and is installed by 80-docker.sh
+# when --with-secrets is used.
+services:
+  guac-mysql:
+    image: mysql:8
+    container_name: guac-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?set in .env}
+      MYSQL_DATABASE: guacamole_db
+      MYSQL_USER: guacuser
+      MYSQL_PASSWORD: ${GUAC_MYSQL_PASSWORD:?set in .env}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - guacnet
+  guacd:
+    image: guacamole/guacd
+    container_name: guacd
+    restart: unless-stopped
+    networks:
+      - guacnet
+  guacamole:
+    image: guacamole/guacamole
+    container_name: guacamole
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      GUACD_HOSTNAME: guacd
+      MYSQL_HOSTNAME: guac-mysql
+      MYSQL_DATABASE: guacamole_db
+      MYSQL_USER: guacuser
+      MYSQL_PASSWORD: ${GUAC_MYSQL_PASSWORD:?set in .env}
+    depends_on:
+      - guacd
+      - guac-mysql
+    networks:
+      - guacnet
+
+volumes:
+  mysql_data:
+
+networks:
+  guacnet:

@@ -1,0 +1,10 @@
+ls: cannot access '/usr/local/tomcat': No such file or directory
+ls: cannot access '/usr/local/tomcat/webapps': No such file or directory
+ls: cannot access '/usr/local/tomcat/conf': No such file or directory
+
+find: ‘/usr/local/tomcat/conf’: No such file or directory
+
+UID          PID    PPID  C STIME TTY          TIME CMD
+minecra+    4035    4005  0 Nov16 ?        00:13:04 /opt/java/openjdk/bin/java -Djava.util.logging.config.file=/tmp/catalina-base.hBKVFC6QJj/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dignore.endorsed.dirs= -classpath /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar -Dcatalina.base=/tmp/catalina-base.hBKVFC6QJj -Dcatalina.home=/usr/local/tomcat -Djava.io.tmpdir=/tmp/catalina-base.hBKVFC6QJj/temp org.apache.catalina.startup.Bootstrap start
+
+/opt/java/openjdk/bin/java -Djava.util.logging.config.file=/tmp/catalina-base.hBKVFC6QJj/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dignore.endorsed.dirs= -classpath /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar -Dcatalina.base=/tmp/catalina-base.hBKVFC6QJj -Dcatalina.home=/usr/local/tomcat -Djava.io.tmpdir=/tmp/catalina-base.hBKVFC6QJj/temp org.apache.catalina.startup.Bootstrap start 

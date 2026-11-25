@@ -1,0 +1,90 @@
+NAME   FSTYPE FSVER LABEL  UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+sda                                                                            
+├─sda1                                                                         
+├─sda2 ext4   1.0          f3f0645c-ef4d-4442-b8a4-608837359182    1.3G    24% /boot
+└─sda3 btrfs        fedora ccf7a767-b3de-40e9-b953-3d0a49ac5880   22.4G    57% /home
+                                                                               /
+sr0                                                                            
+zram0  swap   1     zram0  227790a1-3f04-4ddd-af9a-d83e53cacbc9                [SWAP]
+
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/sda3      btrfs      58G   33G   23G  60% /
+devtmpfs       devtmpfs   12G     0   12G   0% /dev
+tmpfs          tmpfs      12G  8.0K   12G   1% /dev/shm
+tmpfs          tmpfs     4.7G  4.1M  4.7G   1% /run
+tmpfs          tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+/dev/sda3      btrfs      58G   33G   23G  60% /home
+tmpfs          tmpfs      12G  2.1M   12G   1% /tmp
+/dev/sda2      ext4      2.0G  460M  1.4G  26% /boot
+tmpfs          tmpfs     1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs          tmpfs     2.4G   76K  2.4G   1% /run/user/60578
+tmpfs          tmpfs     2.4G   44K  2.4G   1% /run/user/1000
+
+/                                                                                                   /dev/sda3[/root]       btrfs       rw,relatime,seclabel,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/root
+├─/dev                                                                                              devtmpfs               devtmpfs    rw,nosuid,seclabel,size=12209828k,nr_inodes=3052457,mode=755,inode64
+│ ├─/dev/hugepages                                                                                  hugetlbfs              hugetlbfs   rw,nosuid,nodev,relatime,seclabel,pagesize=2M
+│ ├─/dev/mqueue                                                                                     mqueue                 mqueue      rw,nosuid,nodev,noexec,relatime,seclabel
+│ ├─/dev/shm                                                                                        tmpfs                  tmpfs       rw,nosuid,nodev,seclabel,inode64,usrquota
+│ └─/dev/pts                                                                                        devpts                 devpts      rw,nosuid,noexec,relatime,seclabel,gid=5,mode=600,ptmxmode=000
+├─/sys                                                                                              sysfs                  sysfs       rw,nosuid,nodev,noexec,relatime,seclabel
+│ ├─/sys/fs/selinux                                                                                 selinuxfs              selinuxfs   rw,nosuid,noexec,relatime
+│ ├─/sys/kernel/debug                                                                               debugfs                debugfs     rw,nosuid,nodev,noexec,relatime,seclabel
+│ ├─/sys/kernel/tracing                                                                             tracefs                tracefs     rw,nosuid,nodev,noexec,relatime,seclabel
+│ ├─/sys/fs/fuse/connections                                                                        fusectl                fusectl     rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/kernel/security                                                                            securityfs             securityfs  rw,nosuid,nodev,noexec,relatime
+│ ├─/sys/fs/cgroup                                                                                  cgroup2                cgroup2     rw,nosuid,nodev,noexec,relatime,seclabel,nsdelegate,memory_recursiveprot
+│ ├─/sys/fs/pstore                                                                                  none                   pstore      rw,nosuid,nodev,noexec,relatime,seclabel
+│ ├─/sys/fs/bpf                                                                                     bpf                    bpf         rw,nosuid,nodev,noexec,relatime,mode=700
+│ └─/sys/kernel/config                                                                              configfs               configfs    rw,nosuid,nodev,noexec,relatime
+├─/proc                                                                                             proc                   proc        rw,nosuid,nodev,noexec,relatime
+│ └─/proc/sys/fs/binfmt_misc                                                                        systemd-1              autofs      rw,relatime,fd=42,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=6934
+│   └─/proc/sys/fs/binfmt_misc                                                                      binfmt_misc            binfmt_misc rw,nosuid,nodev,noexec,relatime
+├─/run                                                                                              tmpfs                  tmpfs       rw,nosuid,nodev,seclabel,size=4895412k,nr_inodes=819200,mode=755,inode64
+│ ├─/run/credentials/systemd-journald.service                                                       tmpfs                  tmpfs       ro,nosuid,nodev,noexec,relatime,nosymfollow,seclabel,size=1024k,nr_inodes=1024,mode=700,inode64,noswap
+│ ├─/run/credentials/systemd-resolved.service                                                       tmpfs                  tmpfs       ro,nosuid,nodev,noexec,relatime,nosymfollow,seclabel,size=1024k,nr_inodes=1024,mode=700,inode64,noswap
+│ ├─/run/user/60578                                                                                 tmpfs                  tmpfs       rw,nosuid,nodev,relatime,seclabel,size=2447704k,nr_inodes=611926,mode=700,uid=60578,gid=42,inode64
+│ │ └─/run/user/60578/doc                                                                           portal                 fuse.portal rw,nosuid,nodev,relatime,user_id=60578,group_id=42
+│ ├─/run/user/1000                                                                                  tmpfs                  tmpfs       rw,nosuid,nodev,relatime,seclabel,size=2447704k,nr_inodes=611926,mode=700,uid=1000,gid=1000,inode64
+│ ├─/run/docker/netns/9ea4447c6360                                                                  nsfs[net:[4026532928]] nsfs        rw
+│ ├─/run/docker/netns/2c240bc1b39e                                                                  nsfs[net:[4026532852]] nsfs        rw
+│ └─/run/docker/netns/ee9f6bdbe8ed                                                                  nsfs[net:[4026533004]] nsfs        rw
+├─/home                                                                                             /dev/sda3[/home]       btrfs       rw,relatime,seclabel,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/home
+├─/tmp                                                                                              tmpfs                  tmpfs       rw,nosuid,nodev,seclabel,size=12238532k,nr_inodes=1048576,inode64,usrquota
+├─/boot                                                                                             /dev/sda2              ext4        rw,relatime,seclabel
+├─/var/lib/nfs/rpc_pipefs                                                                           sunrpc                 rpc_pipefs  rw,relatime
+├─/var/lib/docker/rootfs/overlayfs/78f70553d91a94c41c8ea66a987c688152bc43c5952607da25eb9bce286a23a5 overlay                overlay     rw,relatime,seclabel,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/73/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/36/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/35/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/34/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/33/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/32/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/31/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/76/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/76/work
+├─/var/lib/docker/rootfs/overlayfs/7f7db67168d840d24c7297fc44581d67f08349fb88cba316723e88954c400a6d overlay                overlay     rw,relatime,seclabel,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/74/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/26/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/25/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/24/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/23/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/22/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/21/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/20/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/19/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/18/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/17/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/75/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/75/work
+└─/var/lib/docker/rootfs/overlayfs/31be80d5ad72d86fbef84c8b4aa0d2ffc1828c696a36e0ef6c60cb4caa0b5098 overlay                overlay     rw,relatime,seclabel,lowerdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/77/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/14/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/13/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/12/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/11/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/10/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/9/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/8/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/7/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/6/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/5/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/4/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/3/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/2/fs:/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/1/fs,upperdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/78/fs,workdir=/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs/snapshots/78/work
+
+
+#
+# /etc/fstab
+# Created by anaconda on Mon Mar  2 23:15:36 2026
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk/'.
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+#
+# After editing this file, run 'systemctl daemon-reload' to update systemd
+# units generated from this file.
+#
+UUID=ccf7a767-b3de-40e9-b953-3d0a49ac5880 / btrfs subvol=root,compress=zstd:1 0 0
+UUID=f3f0645c-ef4d-4442-b8a4-608837359182 /boot ext4 defaults 1 2
+UUID=ccf7a767-b3de-40e9-b953-3d0a49ac5880 /home btrfs subvol=home,compress=zstd:1 0 0
+
+
+  WARNING: Running as a non-root user. Functionality may be unavailable.
+  /run/lock/lvm/P_global:aux: open failed: Permission denied
+  /dev/mapper/control: open failed: Permission denied
+  Failure to communicate with kernel device-mapper driver.
+  Incompatible libdevmapper 1.02.208 (2025-07-30) and kernel driver (unknown version).
+  WARNING: Running as a non-root user. Functionality may be unavailable.
+  /run/lock/lvm/P_global:aux: open failed: Permission denied
+  /dev/mapper/control: open failed: Permission denied
+  Failure to communicate with kernel device-mapper driver.
+  Incompatible libdevmapper 1.02.208 (2025-07-30) and kernel driver (unknown version).
+  WARNING: Running as a non-root user. Functionality may be unavailable.
+  /run/lock/lvm/P_global:aux: open failed: Permission denied
+  /dev/mapper/control: open failed: Permission denied
+  Failure to communicate with kernel device-mapper driver.
+  Incompatible libdevmapper 1.02.208 (2025-07-30) and kernel driver (unknown version).
+mdadm: must be super-user to perform this action

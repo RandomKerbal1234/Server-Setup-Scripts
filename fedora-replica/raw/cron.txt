@@ -1,0 +1,54 @@
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+
+# For details see man 4 crontabs
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
+
+
+/etc/cron.d:
+total 4
+drwxr-xr-x. 1 root root   14 Oct 23  2025 .
+drwxr-xr-x. 1 root root 5298 Nov 23 00:09 ..
+-rw-r--r--. 1 root root  128 Aug  5  2025 0hourly
+
+/etc/cron.daily:
+total 20
+drwxr-xr-x. 1 root root    26 Sep 19 12:54 .
+drwxr-xr-x. 1 root root  5298 Nov 23 00:09 ..
+-rwxr-xr-x. 1 root root 17472 Sep 16 23:47 google-chrome
+
+/etc/cron.hourly:
+total 4
+drwxr-xr-x. 1 root root   16 Oct 23  2025 .
+drwxr-xr-x. 1 root root 5298 Nov 23 00:09 ..
+-rwxr-xr-x. 1 root root  847 Aug  5  2025 0anacron
+
+/etc/cron.monthly:
+total 0
+drwxr-xr-x. 1 root root    0 Jul 22  2025 .
+drwxr-xr-x. 1 root root 5298 Nov 23 00:09 ..
+
+/etc/cron.weekly:
+total 0
+drwxr-xr-x. 1 root root    0 Jul 22  2025 .
+drwxr-xr-x. 1 root root 5298 Nov 23 00:09 ..
+
+===== /etc/cron.d/0hourly
+# Run the hourly jobs
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+01 * * * * root run-parts /etc/cron.hourly
+
+total 0
+drwx------. 1 root root  0 Aug  5  2025 .
+drwxr-xr-x. 1 root root 94 Oct 23  2025 ..

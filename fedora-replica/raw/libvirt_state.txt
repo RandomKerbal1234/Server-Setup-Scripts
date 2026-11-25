@@ -1,0 +1,36 @@
+ Id   Name   State
+--------------------
+
+
+ Name      State    Autostart   Persistent
+--------------------------------------------
+ default   active   yes         yes
+
+
+total 0
+drwx--x--x. 1 root root  0 Oct 25 20:00 .
+drwxr-xr-x. 1 root root 88 Oct 25 20:00 ..
+
+total 220
+drwx------. 1 root root   530 Oct 25 20:00 .
+drwxr-xr-x. 1 root root  5298 Nov 23 00:09 ..
+-rw-r--r--. 1 root root   450 Aug  1  2025 libvirt-admin.conf
+-rw-r--r--. 1 root root   547 Aug  1  2025 libvirt.conf
+-rw-r--r--. 1 root root 17826 Oct 25 20:00 libvirtd.conf
+-rw-r--r--. 1 root root  1041 Oct 25 20:00 network.conf
+drwx------. 1 root root     0 Oct 25 20:00 nwfilter
+drwx------. 1 root root    34 Oct 25 20:00 qemu
+-rw-r--r--. 1 root root 44485 Oct 25 20:00 qemu.conf
+-rw-r--r--. 1 root root  2169 Oct 25 20:00 qemu-lockd.conf
+drwx------. 1 root root     0 Oct 25 20:00 secrets
+drwx------. 1 root root    18 Oct 25 20:00 storage
+-rw-r--r--. 1 root root 12421 Oct 25 20:00 virtinterfaced.conf
+-rw-r--r--. 1 root root  3058 Aug  1  2025 virtlockd.conf
+-rw-r--r--. 1 root root  4095 Aug  1  2025 virtlogd.conf
+-rw-r--r--. 1 root root 12411 Oct 25 20:00 virtnetworkd.conf
+-rw-r--r--. 1 root root 12411 Oct 25 20:00 virtnodedevd.conf
+-rw-r--r--. 1 root root 12416 Oct 25 20:00 virtnwfilterd.conf
+-rw-r--r--. 1 root root 17840 Oct 25 20:00 virtproxyd.conf
+-rw-r--r--. 1 root root 12396 Oct 25 20:00 virtqemud.conf
+-rw-r--r--. 1 root root 12406 Oct 25 20:00 virtsecretd.conf
+-rw-r--r--. 1 root root 12411 Oct 25 20:00 virtstoraged.conf

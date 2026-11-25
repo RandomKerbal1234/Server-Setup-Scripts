@@ -1,0 +1,33 @@
+# /etc/systemd/system/minecraft.service
+[Unit]
+Description=Minecraft Server
+After=network.target
+
+# /usr/lib/systemd/system/service.d/10-timeout-abort.conf
+# This file is part of the systemd package.
+# See https://fedoraproject.org/wiki/Changes/Shorter_Shutdown_Timer.
+#
+# To facilitate debugging when a service fails to stop cleanly,
+# TimeoutStopFailureMode=abort is set to "crash" services that fail to stop in
+# the time allotted. This will cause the service to be terminated with SIGABRT
+# and a coredump to be generated.
+#
+# To undo this configuration change, create a mask file:
+#   sudo mkdir -p /etc/systemd/system/service.d
+#   sudo ln -sv /dev/null /etc/systemd/system/service.d/10-timeout-abort.conf
+
+[Service]
+TimeoutStopFailureMode=abort
+
+○ minecraft.service - Minecraft Server
+     Loaded: bad-setting (Reason: Unit minecraft.service has a bad unit file setting.)
+    Drop-In: /usr/lib/systemd/system/service.d
+             └─10-timeout-abort.conf
+     Active: inactive (dead)
+
+Nov 23 14:28:26 fedora systemd[1]: minecraft.service: Service has no ExecStart=, ExecStop=, or SuccessAction=. Refusing.
+Nov 23 14:28:26 fedora systemd[1]: minecraft.service: Service has no ExecStart=, ExecStop=, or SuccessAction=. Refusing.
+Nov 23 14:28:26 fedora systemd[1]: minecraft.service: Service has no ExecStart=, ExecStop=, or SuccessAction=. Refusing.
+Nov 23 14:28:26 fedora systemd[1]: minecraft.service: Service has no ExecStart=, ExecStop=, or SuccessAction=. Refusing.
+
+-rw-r--r--. 1 root root 57 Jun 16 11:40 /etc/systemd/system/minecraft.service

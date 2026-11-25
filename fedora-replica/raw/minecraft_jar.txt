@@ -1,0 +1,202 @@
+/home/minecraft/server/server.jar: Java archive data (JAR)
+
+Archive:  /home/minecraft/server/server.jar
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+      181  12-22-2025 06:29   META-INF/MANIFEST.MF
+        0  12-22-2025 06:29   META-INF/
+        0  12-22-2025 06:29   net/
+        0  12-22-2025 06:29   net/fabricmc/
+        0  12-22-2025 06:29   net/fabricmc/installer/
+     1205  12-22-2025 06:29   net/fabricmc/installer/ServerLauncher$LaunchData.class
+     6295  12-22-2025 06:29   net/fabricmc/installer/InstallerGui.class
+     5394  12-22-2025 06:29   net/fabricmc/installer/Main.class
+      236  12-22-2025 06:29   net/fabricmc/installer/ServerLauncher$1.class
+    13372  12-22-2025 06:29   net/fabricmc/installer/Handler.class
+     9996  12-22-2025 06:29   net/fabricmc/installer/ServerLauncher.class
+        0  12-22-2025 06:29   net/fabricmc/installer/server/
+     1351  12-22-2025 06:29   net/fabricmc/installer/server/ServerHandler$1.class
+     6703  12-22-2025 06:29   net/fabricmc/installer/server/ServerHandler.class
+    15313  12-22-2025 06:29   net/fabricmc/installer/server/ServerPostInstallDialog.class
+     3401  12-22-2025 06:29   net/fabricmc/installer/server/MinecraftServerDownloader.class
+    14428  12-22-2025 06:29   net/fabricmc/installer/server/ServerInstaller.class
+        0  12-22-2025 06:29   net/fabricmc/installer/client/
+     4620  12-22-2025 06:29   net/fabricmc/installer/client/ProfileInstaller.class
+    12641  12-22-2025 06:29   net/fabricmc/installer/client/ClientHandler.class
+     1601  12-22-2025 06:29   net/fabricmc/installer/client/ProfileInstaller$LauncherType.class
+     3910  12-22-2025 06:29   net/fabricmc/installer/client/ClientInstaller.class
+     2018  12-22-2025 06:29   net/fabricmc/installer/LoaderVersion.class
+        0  12-22-2025 06:29   net/fabricmc/installer/launcher/
+      386  12-22-2025 06:29   net/fabricmc/installer/launcher/MojangLauncherHelper.class
+     3789  12-22-2025 06:29   net/fabricmc/installer/launcher/NativesHelper.class
+      636  12-22-2025 06:29   net/fabricmc/installer/launcher/MojangLauncherHelperWrapper.class
+
+Manifest-Version: 1.0
+Implementation-Title: FabricInstaller
+Implementation-Version: 1.1.1
+Main-Class: net.fabricmc.installer.ServerLauncher
+Enable-Native-Access: ALL-UNNAMED
+
+
+56327581 /home/minecraft/server/.fabric/server/1.21.11-server.jar
+643 /home/minecraft/server/.fabric/server/fabric-loader-server-0.18.4-minecraft-1.21.11.jar
+20282745 /home/minecraft/server/.fabric/remappedJars/minecraft-1.21.11-0.18.4/server-intermediary.jar
+184003 /home/minecraft/server/.fabric/processedMods/c2me-base-0.3.6.0.0+1.21.11-39a93485b508bca1.jar
+7126 /home/minecraft/server/.fabric/processedMods/c2me-fixes-chunkio-threading-iss0.0+1.21.11-1e8921ddd7b3039a.jar
+8801 /home/minecraft/server/.fabric/processedMods/c2me-fixes-general-threading-iss0.0+1.21.11-f45dbd35d3bb86f9.jar
+64011 /home/minecraft/server/.fabric/processedMods/c2me-fixes-worldgen-threading-is0.0+1.21.11-d968d530dece7c75.jar
+6374 /home/minecraft/server/.fabric/processedMods/c2me-fixes-worldgen-vanilla-bugs0.0+1.21.11-ff29aa87fa38bb3b.jar
+50047 /home/minecraft/server/.fabric/processedMods/c2me-notickvd-0.3.6.0.0+1.21.11-747d9578680c2237.jar
+26690 /home/minecraft/server/.fabric/processedMods/c2me-opts-allocs-0.3.6.0.0+1.21.11-2d775272331f0016.jar
+8500 /home/minecraft/server/.fabric/processedMods/c2me-opts-chunkio-0.3.6.0.0+1.21.11-8cf1a6b1fbcd3f0c.jar
+151815 /home/minecraft/server/.fabric/processedMods/c2me-opts-dfc-0.3.6.0.0+1.21.11-d43c38d2d28d2e06.jar
+8352 /home/minecraft/server/.fabric/processedMods/c2me-opts-math-0.3.6.0.0+1.21.11-1a29a000d23df171.jar
+769699 /home/minecraft/server/.fabric/processedMods/c2me-opts-natives-math-0.3.6.0.0+1.21.11-aab76836ccad8797.jar
+29914 /home/minecraft/server/.fabric/processedMods/c2me-opts-scheduling-0.3.6.0.0+1.21.11-cf89f398edc79762.jar
+9795 /home/minecraft/server/.fabric/processedMods/c2me-opts-worldgen-general-0.3.60.0+1.21.11-b9118dd533c759cd.jar
+21574 /home/minecraft/server/.fabric/processedMods/c2me-opts-worldgen-vanilla-0.3.60.0+1.21.11-5957e2abb0840778.jar
+47136 /home/minecraft/server/.fabric/processedMods/c2me-rewrites-chunk-serializer-00.0+1.21.11-a5cc5a6a0bce6fa6.jar
+122972 /home/minecraft/server/.fabric/processedMods/c2me-rewrites-chunk-system-0.3.60.0+1.21.11-82d24bd08112a35f.jar
+22239 /home/minecraft/server/.fabric/processedMods/c2me-rewrites-chunkio-0.3.6.0.0+1.21.11-e414901e91b8e602.jar
+6578 /home/minecraft/server/.fabric/processedMods/c2me-server-utils-0.3.6.0.0+1.21.11-79be29a5a77d10bb.jar
+8182 /home/minecraft/server/.fabric/processedMods/c2me-threading-lighting-0.3.6.0.0+1.21.11-a41328ed7dfd1809.jar
+10678 /home/minecraft/server/.fabric/processedMods/cloth-basic-math-0.6.1-17ea6dce277cc3b8.jar
+387380 /home/minecraft/server/.fabric/processedMods/com_electronwill_night-config_core-3.8.3-ec8464e95c95ef14.jar
+40096 /home/minecraft/server/.fabric/processedMods/com_electronwill_night-config_toml-3.8.3-bcffcb53b86355d6.jar
+122144 /home/minecraft/server/.fabric/processedMods/com_ibm_async_asyncutil-0.1.0-3c7b6af4bbee1c0.jar
+982342 /home/minecraft/server/.fabric/processedMods/dev_babbaj_nether-pathfinder-1.4.1-abcbb6c7cfacf7f3.jar
+27859 /home/minecraft/server/.fabric/processedMods/fabric-api-base-1.0.5+4ebb5c083e-ccbe8773b96707a4.jar
+47878 /home/minecraft/server/.fabric/processedMods/fabric-api-lookup-api-v1-1.6.113+1fb1cde93e-f540b5a148e20f53.jar
+76011 /home/minecraft/server/.fabric/processedMods/fabric-biome-api-v1-17.1.1+4fc5413f3e-e85e52e6bab1dbc6.jar
+15001 /home/minecraft/server/.fabric/processedMods/fabric-block-api-v1-1.1.10+4ebb5c083e-f6522f8c50d18396.jar
+19695 /home/minecraft/server/.fabric/processedMods/fabric-block-view-api-v2-1.0.39+4ebb5c083e-6e57cb972c4cbf8a.jar
+33366 /home/minecraft/server/.fabric/processedMods/fabric-command-api-v2-2.4.7+6b42a6003e-a6d7072552922485.jar
+63585 /home/minecraft/server/.fabric/processedMods/fabric-content-registries-v0-10.+4fc5413f3e-3ef11710b6112069.jar
+30029 /home/minecraft/server/.fabric/processedMods/fabric-convention-tags-v1-2.1.55+7f945d5b3e-d32f78ff4979d0df.jar
+265993 /home/minecraft/server/.fabric/processedMods/fabric-convention-tags-v2-2.17.3+8ef948ba3e-529987c413a9d787.jar
+15257 /home/minecraft/server/.fabric/processedMods/fabric-crash-report-info-v1-0.3.+4ebb5c083e-949db33707933323.jar
+94788 /home/minecraft/server/.fabric/processedMods/fabric-data-attachment-api-v1-1.+eed0806f3e-3c57f0f756943524.jar
+140878 /home/minecraft/server/.fabric/processedMods/fabric-data-generation-api-v1-23+69974c4e3e-6fe101d3c8bb44e2.jar
+17695 /home/minecraft/server/.fabric/processedMods/fabric-dimensions-v1-4.0.28+4fc5413f3e-a3d41ba86108ac03.jar
+72111 /home/minecraft/server/.fabric/processedMods/fabric-entity-events-v1-3.1.1+1d0ab4303e-6e6ce19df55bc4f9.jar
+60686 /home/minecraft/server/.fabric/processedMods/fabric-events-interaction-v0-4.1+3b89ecf63e-189ff5cba4ae8187.jar
+55248 /home/minecraft/server/.fabric/processedMods/fabric-game-rule-api-v1-2.0.3+4fc5413f3e-ce5cefd1b81e72ef.jar
+65579 /home/minecraft/server/.fabric/processedMods/fabric-item-api-v1-11.5.20+d0c46b9e3e-d954a93d41004c9d.jar
+51995 /home/minecraft/server/.fabric/processedMods/fabric-item-group-api-v1-4.2.36+4fc5413f3e-ce64fcbb9607019.jar
+90181 /home/minecraft/server/.fabric/processedMods/fabric-lifecycle-events-v1-2.6.1+4ebb5c083e-97226f6338f6a9c9.jar
+20139 /home/minecraft/server/.fabric/processedMods/fabric-loot-api-v2-3.0.73+3f89f5a53e-884dcc32ab57f2d7.jar
+32468 /home/minecraft/server/.fabric/processedMods/fabric-loot-api-v3-2.0.20+78c8b4663e-5be11dfd5efea89c.jar
+40516 /home/minecraft/server/.fabric/processedMods/fabric-message-api-v1-6.1.12+4ebb5c083e-ffa40b6d2c68778e.jar
+208725 /home/minecraft/server/.fabric/processedMods/fabric-networking-api-v1-5.1.5+ae1e07683e-f589ae94fe2ede61.jar
+76686 /home/minecraft/server/.fabric/processedMods/fabric-object-builder-api-v1-21.+4fc5413f3e-6d3730b1a2168147.jar
+51933 /home/minecraft/server/.fabric/processedMods/fabric-particles-v1-4.2.11+4fc5413f3e-c7e36916cb850848.jar
+15277 /home/minecraft/server/.fabric/processedMods/fabric-permissions-api-v0-0.6.1-916253f517cc9edd.jar
+95395 /home/minecraft/server/.fabric/processedMods/fabric-recipe-api-v1-8.2.3+4ebb5c083e-3ed43747fcd849d9.jar
+118251 /home/minecraft/server/.fabric/processedMods/fabric-registry-sync-v0-6.2.5+1718722b3e-4e7a67e639a2586a.jar
+26895 /home/minecraft/server/.fabric/processedMods/fabric-rendering-fluids-v1-3.1.4+4ebb5c083e-4cb900bfd2e68721.jar
+53897 /home/minecraft/server/.fabric/processedMods/fabric-resource-conditions-api-v+4fc5413f3e-92d482f4da036509.jar
+17899 /home/minecraft/server/.fabric/processedMods/fabric-resource-loader-v0-3.3.4+4fc5413f3e-3435cb7e2d11cfdb.jar
+133612 /home/minecraft/server/.fabric/processedMods/fabric-resource-loader-v1-1.0.10+78c8b4663e-cf77ab1cb7b42be8.jar
+24090 /home/minecraft/server/.fabric/processedMods/fabric-screen-handler-api-v1-1.3+4fc5413f3e-d37538aead309591.jar
+19254 /home/minecraft/server/.fabric/processedMods/fabric-serialization-api-v1-1.0.+4ebb5c083e-4096d7df63eaef3d.jar
+37036 /home/minecraft/server/.fabric/processedMods/fabric-tag-api-v1-1.2.20+4fc5413f3e-b8a504e7b7a385f.jar
+189891 /home/minecraft/server/.fabric/processedMods/fabric-transfer-api-v1-6.0.24+4fc5413f3e-140a770509e61e98.jar
+9162 /home/minecraft/server/.fabric/processedMods/fabric-transitive-access-widener+014c8cec3e-f5376474f505c518.jar
+2665695 /home/minecraft/server/.fabric/processedMods/io_reactivex_rxjava3_rxjava-3.1.12-2222239206b4cda9.jar
+723339 /home/minecraft/server/.fabric/processedMods/mixinextras-0.5.0-1f6627383f457848.jar
+81929 /home/minecraft/server/.fabric/processedMods/mixinsquared-0.2.0-beta.6-9bfabf1b111f941.jar
+48045 /home/minecraft/server/.fabric/processedMods/net_objecthunter_exp4j-0.4.8-a5046cf87055f5b0.jar
+493766 /home/minecraft/server/.fabric/processedMods/org_jctools_jctools-core-4.0.5-f7afd09107eaaa7c.jar
+11879 /home/minecraft/server/.fabric/processedMods/org_reactivestreams_reactive-streams-1.0.4-acfe7d9f290164e.jar
+31631 /home/minecraft/server/.fabric/processedMods/packet_tweaker-0.6.0-pre.1+1.21.2-pre3-23087e40e4143a55.jar
+30009 /home/minecraft/server/.fabric/processedMods/player-data-api-0.9.0+1.21.9-6fdc3a44b44b6070.jar
+72924 /home/minecraft/server/.fabric/processedMods/server_translations_api-2.5.2+1.21.9-pre3-7274001a6cb6e349.jar
+2459 /home/minecraft/server/.fabric/processedMods/voicechat_api-2.6.0-aefbe6eb4fb4aad6.jar
+568915 /home/minecraft/server/.fabric/processedMods/xaerolib-1.0.45-86bccdbd5cc0bf24.jar
+168075 /home/minecraft/server/.fabric/processedMods/com_flowpowered_flow-math-1.0.3-a6d979a93378a647.jar
+96018 /home/minecraft/server/.fabric/processedMods/de_bluecolored_bluenbt-3.5.0-42e5e9ce0a127107.jar
+1349422 /home/minecraft/server/.fabric/processedMods/ac_grim_grimac_common-2.3.73-380db1dd165d281e.jar
+11365 /home/minecraft/server/.fabric/processedMods/ac_grim_grimac_grim-internal-1.2.4.0-b0ebefe9a91f01be.jar
+25242 /home/minecraft/server/.fabric/processedMods/ac_grim_grimac_grimapi-1.2.4.0-81cc21074a31375e.jar
+688811 /home/minecraft/server/.fabric/processedMods/cloud-2.0.0-beta.15-50994f207f28f6ea.jar
+65720 /home/minecraft/server/.fabric/processedMods/com_github_alexheretic_dynamics-4.0-a694220d7fb041df.jar
+14082 /home/minecraft/server/.fabric/processedMods/com_github_alexheretic_fluent-2.0-aea7d151d93c3769.jar
+3990252 /home/minecraft/server/.fabric/processedMods/com_github_retrooper_api-2.11.2+5c-SNAPSHOT-8edadd4feac4ee5a.jar
+15482 /home/minecraft/server/.fabric/processedMods/com_github_retrooper_netty-commo5c-SNAPSHOT-6d88b24b545b7e07.jar
+24172 /home/minecraft/server/.fabric/processedMods/com_googlecode_json-simple_json-imple-1.1.1-f0c10f366e042d99.jar
+63581 /home/minecraft/server/.fabric/processedMods/com_moandjiezana_toml_toml4j-0.7.2-286690d19a795f09.jar
+172553 /home/minecraft/server/.fabric/processedMods/com_zaxxer_hikaricp-7.0.2-d24c6d143a75c39d.jar
+28108 /home/minecraft/server/.fabric/processedMods/conditional-mixin-0.6.4-8b74c4c50fea9f59.jar
+24933 /home/minecraft/server/.fabric/processedMods/github_scarsz_configuralize_slim-1.4.1-33f6bd2d62430fcf.jar
+13409 /home/minecraft/server/.fabric/processedMods/grimac-mc1161-2.3.73-93f4a22460d30f7c.jar
+6569 /home/minecraft/server/.fabric/processedMods/grimac-mc1171-2.3.73-df40452b54666efe.jar
+8070 /home/minecraft/server/.fabric/processedMods/grimac-mc1194-2.3.73-9cf9b757ec0df435.jar
+8974 /home/minecraft/server/.fabric/processedMods/grimac-mc1205-2.3.73-d2854e0ff98fada3.jar
+9898 /home/minecraft/server/.fabric/processedMods/grimac-mc1215-2.3.73-a6dd8e81b917750c.jar
+71803 /home/minecraft/server/.fabric/processedMods/io_leangen_geantyref_geantyref-1.3.15-41535e3545f06e0c.jar
+459673 /home/minecraft/server/.fabric/processedMods/net_kyori_adventure-api-4.25.0-673b3bfc3406c8e.jar
+11865 /home/minecraft/server/.fabric/processedMods/net_kyori_adventure-key-4.25.0-760d4c1d19aed78f.jar
+106900 /home/minecraft/server/.fabric/processedMods/net_kyori_adventure-nbt-4.25.0-762e8a45e4aeb7e3.jar
+196176 /home/minecraft/server/.fabric/processedMods/net_kyori_adventure-text-minimessage-4.25.0-d4973d1743753a72.jar
+24166 /home/minecraft/server/.fabric/processedMods/net_kyori_examination-api-1.3.0-c0387b10c23298ea.jar
+13601 /home/minecraft/server/.fabric/processedMods/net_kyori_examination-string-1.3.0-1c9f30ec9b2d1134.jar
+133784 /home/minecraft/server/.fabric/processedMods/org_incendo_cloud-annotations-2.0.0-ddf2ab8401c8cb81.jar
+66960 /home/minecraft/server/.fabric/processedMods/org_incendo_cloud-brigadier-2.0.0-beta.14-2ae524a6aee333da.jar
+485700 /home/minecraft/server/.fabric/processedMods/org_incendo_cloud-core-2.0.0-6294e6beb9fd6a62.jar
+96914 /home/minecraft/server/.fabric/processedMods/org_incendo_cloud-minecraft-modd.0.0-beta.15-c039783149163e9.jar
+15067 /home/minecraft/server/.fabric/processedMods/org_incendo_cloud-processors-req-1.0.0-rc.1-1b93bf8fe1f0aced.jar
+28553 /home/minecraft/server/.fabric/processedMods/org_incendo_cloud-services-2.0.0-982c881c81d73822.jar
+31930 /home/minecraft/server/.fabric/processedMods/org_jetbrains_annotations-24.1.0-3204009c3b788685.jar
+70142 /home/minecraft/server/.fabric/processedMods/org_slf4j_slf4j-api-2.0.17-43a4f04e9b190cff.jar
+334584 /home/minecraft/server/.fabric/processedMods/org_yaml_snakeyaml-2.2-3e7e022439444157.jar
+4308178 /home/minecraft/server/.fabric/processedMods/packetevents-2.11.2+675bc5c-SNAPSHOT-2add10ca1e7f0ac4.jar
+17714 /home/minecraft/server/.fabric/processedMods/packetevents-mc1140-2.11.2+675bc5c-SNAPSHOT-1484460416e3f03f.jar
+7621 /home/minecraft/server/.fabric/processedMods/packetevents-mc1194-2.11.2+675bc5c-SNAPSHOT-32e2c551593b3774.jar
+8202 /home/minecraft/server/.fabric/processedMods/packetevents-mc1202-2.11.2+675bc5c-SNAPSHOT-ec722b9b775d13a.jar
+4911 /home/minecraft/server/.fabric/processedMods/packetevents-mc1211-2.11.2+675bc5c-SNAPSHOT-5803bddfe9bc3a73.jar
+4793 /home/minecraft/server/.fabric/processedMods/packetevents-mc1216-2.11.2+675bc5c-SNAPSHOT-dd14e9f0648ddb48.jar
+15475 /home/minecraft/server/.fabric/processedMods/com_github_retrooper_netty-commo5c-SNAPSHOT-ab078f6fbc846aa4.jar
+76702 /home/minecraft/server/.fabric/processedMods/com_fasterxml_jackson_core_jacksions-2.12.2-5340234b62102db1.jar
+366818 /home/minecraft/server/.fabric/processedMods/com_fasterxml_jackson_core_jackscore-2.12.2-edf19aca98acb596.jar
+1522148 /home/minecraft/server/.fabric/processedMods/com_fasterxml_jackson_core_jacksbind-2.12.2-24c581a0b60dc147.jar
+121320 /home/minecraft/server/.fabric/processedMods/com_fasterxml_jackson_datatype_jr310-2.12.2-3514a6eb328f4647.jar
+105666 /home/minecraft/server/.fabric/processedMods/com_fasterxml_jackson_module_jactlin-2.12.2-e9524e503d56652c.jar
+472347 /home/minecraft/server/.fabric/processedMods/com_uchuhimo_konf-core-1.1.2-42c705b5d3e52e41.jar
+15704 /home/minecraft/server/.fabric/processedMods/com_uchuhimo_konf-toml-1.1.2-f3734390746cccfb.jar
+37115 /home/minecraft/server/.fabric/processedMods/lingua_bib-1.21.11-1.0.6-fabric-d2d9dae836a29071.jar
+218689 /home/minecraft/server/.fabric/processedMods/org_apache_commons_commons-text-1.9-f8747f3742e33146.jar
+782772 /home/minecraft/server/.fabric/processedMods/org_javassist_javassist-3.26.0-GA-3e9f5aa205d68c98.jar
+1088680 /home/minecraft/server/.fabric/processedMods/org_jetbrains_exposed_exposed-co-1.0.0-rc-2-b7dfc2a7b5a39666.jar
+154709 /home/minecraft/server/.fabric/processedMods/org_jetbrains_exposed_exposed-da-1.0.0-rc-2-b486489d31e1936d.jar
+45648 /home/minecraft/server/.fabric/processedMods/org_jetbrains_exposed_exposed-ja-1.0.0-rc-2-323520837c83aea2.jar
+299317 /home/minecraft/server/.fabric/processedMods/org_jetbrains_exposed_exposed-jd-1.0.0-rc-2-51a2afcf77cb725c.jar
+3670601 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlin_kotlin-reflect-2.3.20-e0445f917938fd00.jar
+1821781 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlin_kotlin-stdlib-2.3.20-ff3004054632a8b7.jar
+1277 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlin_kotlin-stdljdk7-2.3.20-d8267f4d9d783be8.jar
+1281 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlin_kotlin-stdljdk8-2.3.20-a485e43494d9c394.jar
+61737 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlinx_atomicfu-jvm-0.32.1-5343c4f6a84ba732.jar
+1493394 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlinx_kotlinx-co-jvm-1.10.2-dc3d13b93361afd1.jar
+1303 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlinx_kotlinx-cojdk8-1.10.2-8ee2d40032486432.jar
+701705 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlinx_kotlinx-dae-jvm-0.7.1-5cc8fbc762d530db.jar
+23364 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlinx_kotlinx-iog-jvm-0.9.0-17ad2f282fb0c67b.jar
+155595 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlinx_kotlinx-ioe-jvm-0.9.0-cf1d42afe7996083.jar
+72364 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlinx_kotlinx-se-jvm-1.10.0-a3734bb14534e5cf.jar
+407823 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlinx_kotlinx-se-jvm-1.10.0-7b1c015e984a8179.jar
+282320 /home/minecraft/server/.fabric/processedMods/org_jetbrains_kotlinx_kotlinx-se-jvm-1.10.0-241626896b7ea186.jar
+106995 /home/minecraft/server/.fabric/processedMods/org_reflections_reflections-0.9.12-ecca851b63010347.jar
+14346963 /home/minecraft/server/.fabric/processedMods/org_xerial_sqlite-jdbc-3.50.3.0-7c0ddc59d2a4458.jar
+340057 /home/minecraft/server/.fabric/processedMods/org_yaml_snakeyaml-2.4-65d981c135e247a5.jar
+7632 /home/minecraft/server/.fabric/processedMods/common-protection-api-1.0.0-932a49106634d194.jar
+31630 /home/minecraft/server/.fabric/processedMods/packet_tweaker-0.6.0+1.21.10-75b5bc741f0166f4.jar
+50364 /home/minecraft/server/.fabric/processedMods/polymer-autohost-0.15.2+1.21.11-569ee9f61187816b.jar
+66743 /home/minecraft/server/.fabric/processedMods/polymer-blocks-0.15.2+1.21.11-64abbc3930e9b373.jar
+110570 /home/minecraft/server/.fabric/processedMods/polymer-common-0.15.2+1.21.11-580c30825451c1e3.jar
+738549 /home/minecraft/server/.fabric/processedMods/polymer-core-0.15.2+1.21.11-1e12d5cf4fefe7c5.jar
+180578 /home/minecraft/server/.fabric/processedMods/polymer-networking-0.15.2+1.21.11-ffb4f43b73e26f1a.jar
+17718 /home/minecraft/server/.fabric/processedMods/polymer-registry-sync-manipulato5.2+1.21.11-c5a0bdb1e6817071.jar
+170618 /home/minecraft/server/.fabric/processedMods/polymer-resource-pack-0.15.2+1.21.11-2dc2c758d93ae646.jar
+232804 /home/minecraft/server/.fabric/processedMods/polymer-resource-pack-extras-0.15.2+1.21.11-4060873bc85c2905.jar
+26392 /home/minecraft/server/.fabric/processedMods/polymer-sound-patcher-0.15.2+1.21.11-e0cf92b874d1f6c9.jar
+228191 /home/minecraft/server/.fabric/processedMods/polymer-virtual-entity-0.15.2+1.21.11-bee520f1b400497f.jar
+59711 /home/minecraft/server/.fabric/processedMods/predicate-api-0.7.0+1.21.11-dad9d1f49fe88e91.jar
+112301 /home/minecraft/server/.fabric/processedMods/sgui-1.11.0+1.21.9-d5361d5a463c0b2c.jar

@@ -1,0 +1,35 @@
+total 5055484
+drwx------. 1 minecraft minecraft        352 Nov 13 13:24 .
+drwxr-xr-x. 1 root      root              40 Oct 28 17:42 ..
+-rw-------. 1 minecraft minecraft       8156 Nov 23 00:09 .bash_history
+-rw-r--r--. 1 minecraft minecraft         18 Jul 22  2025 .bash_logout
+-rw-r--r--. 1 minecraft minecraft        144 Jul 22  2025 .bash_profile
+-rw-r--r--. 1 minecraft minecraft        522 Jul 22  2025 .bashrc
+drwxr-xr-x. 1 minecraft minecraft         72 Nov 16 12:14 .cache
+drwx------. 1 minecraft minecraft         34 May  6  2026 .config
+drwxr-xr-x. 1 minecraft minecraft        524 Apr 13  2026 eaglertech
+-rw-------. 1 minecraft minecraft         20 Apr 23  2026 .lesshst
+drwxr-xr-x. 1 minecraft minecraft         20 Apr 26  2026 .local
+drwxr-xr-x. 1 minecraft minecraft         34 Oct 23  2025 .mozilla
+-rw-------. 1 minecraft minecraft       2226 May 18  2026 .msmtp.log
+-rw-------. 1 minecraft minecraft        288 Apr 17  2026 .msmtprc
+-rw-------. 1 minecraft minecraft        684 Apr 17  2026 .muttrc
+-rw-r--r--. 1 minecraft minecraft          0 Apr  3  2026 .python_history
+drwxr-xr-x. 1 minecraft minecraft        530 Nov 21 18:15 server
+-rw-r--r--. 1 minecraft minecraft 5176758157 Jun 24 17:09 server.tar.gz
+drwxr-xr-x. 1 root      root               0 Apr 26  2026 share
+drwx------. 1 minecraft minecraft         52 May 18  2026 .ssh
+-rw-r--r--. 1 root      root             684 Apr 17  2026 temp1
+-rw-r--r--. 1 root      root             288 Apr 17  2026 temp2
+-rw-------. 1 minecraft minecraft      11554 Nov 13 13:24 .viminfo
+
+total 0
+drwx------. 1 minecraft minecraft  34 May  6  2026 .
+drwx------. 1 minecraft minecraft 352 Nov 13 13:24 ..
+drwx------. 1 minecraft minecraft  12 Apr 23  2026 htop
+drwxr-xr-x. 1 minecraft minecraft  36 May  6  2026 libvirt
+drwx------. 1 minecraft minecraft   0 Apr 23  2026 procps
+
+no crontab for minecraft
+
+no crontab for andrey

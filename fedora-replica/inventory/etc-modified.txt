@@ -1,0 +1,10 @@
+..5....T.  c /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
+S.5....T.  c /etc/yum.repos.d/google-chrome.repo
+..5....T.  c /etc/yum.repos.d/rpmfusion-nonfree-nvidia-driver.repo
+..5....T.  c /etc/yum.repos.d/rpmfusion-nonfree-steam.repo
+S.5....T.  c /etc/sysconfig/livesys
+S.5....T.  c /etc/sysconfig/lm_sensors
+.M.......  c /etc/default/grub
+S.5....T.  c /etc/tlog/tlog-rec-session.conf
+S.5....T.  c /etc/samba/smb.conf
+.......T.  c /etc/vimrc

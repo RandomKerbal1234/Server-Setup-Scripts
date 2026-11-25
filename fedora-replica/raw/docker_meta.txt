@@ -1,0 +1,70 @@
+Client:
+ Version:    29.8.2
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  0.38.0
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  5.5.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 3
+  Running: 3
+  Paused: 0
+  Stopped: 0
+ Images: 3
+ Server Version: 29.8.2
+ Storage Driver: overlayfs
+  driver-type: io.containerd.snapshotter.v1
+ Logging Driver: json-file
+ Cgroup Driver: systemd
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: /usr/bin/tini-static
+ containerd version: 1.fc43
+ runc version: 1.fc43
+ init version: 
+ Security Options:
+  seccomp
+   Profile: builtin
+  selinux
+  cgroupns
+ Kernel Version: 7.3.3-100.fc43.x86_64
+ Operating System: Fedora Linux 43 (Workstation Edition)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 8
+ Total Memory: 23.34GiB
+ Name: fedora
+ ID: e65edd6f-c820-4d27-8285-f543a132d964
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+  ::1/128
+ Live Restore Enabled: false
+ Firewall Backend: iptables+firewalld
+  EnableUserlandProxy: true
+
+ls: cannot access '/etc/docker': No such file or directory
+
+total 24
+drwx-----x. 1 root root   226 Nov 16 00:59 .
+drwx--x---. 1 root root   150 Nov 16 00:59 ..
+drwx-----x. 1 root root    10 May 12  2026 89c17bf31074482db977c003bbcfba4ce5bfa06049998ae4332d4f251a40864f
+brw-------. 1 root root 0, 36 Nov 16 00:59 backingFsBlockDev
+drwx-----x. 1 root root    10 May 12  2026 guac-mysql_mysql_data
+-rw-------. 1 root root 32768 Nov 16 00:59 metadata.db

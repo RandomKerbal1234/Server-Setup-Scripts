@@ -1,0 +1,32 @@
+d 755 root:root 324 /etc/letsencrypt
+d 700 root:root 56 /etc/letsencrypt/accounts
+d 700 root:root 18 /etc/letsencrypt/accounts/acme-v02.api.letsencrypt.org
+d 700 root:root 50 /etc/letsencrypt/archive
+d 755 root:root 450 /etc/letsencrypt/archive/noadminabusearda.opik.net
+f 644 root:root 152 /etc/letsencrypt/cli.ini
+d 700 root:root 62 /etc/letsencrypt/live
+d 755 root:root 94 /etc/letsencrypt/live/noadminabusearda.opik.net
+f 644 root:root 740 /etc/letsencrypt/live/README
+f 644 root:root 774 /etc/letsencrypt/options-ssl-nginx.conf
+d 755 root:root 60 /etc/letsencrypt/renewal
+d 755 root:root 26 /etc/letsencrypt/renewal-hooks
+d 755 root:root 0 /etc/letsencrypt/renewal-hooks/deploy
+d 755 root:root 0 /etc/letsencrypt/renewal-hooks/post
+d 755 root:root 0 /etc/letsencrypt/renewal-hooks/pre
+f 644 root:root 624 /etc/letsencrypt/renewal/noadminabusearda.opik.net.conf
+f 644 root:root 424 /etc/letsencrypt/ssl-dhparams.pem
+f 644 root:root 64 /etc/letsencrypt/.updated-options-ssl-nginx-conf-digest.txt
+f 644 root:root 64 /etc/letsencrypt/.updated-ssl-dhparams-pem-digest.txt
+
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Found the following certs:
+  Certificate Name: noadminabusearda.opik.net
+    Serial Number: 603c7464e2c565038aae01ee8d44904a031
+    Key Type: ECDSA
+    Identifiers: noadminabusearda.opik.net cockpit.noadminabusearda.opik.net
+    Expiry Date: 2027-02-07 19:37:17+00:00 (VALID: 76 days)
+    Certificate Path: /etc/letsencrypt/live/noadminabusearda.opik.net/fullchain.pem
+    Private Key Path: /etc/letsencrypt/live/noadminabusearda.opik.net/privkey.pem
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

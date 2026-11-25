@@ -1,0 +1,5 @@
+nmcli device wifi rescan ssid "$1"
+
+nmcli device wifi connect "$1" hidden yes --ask
+
+/usr/local/bin/ntwrkc: ASCII text

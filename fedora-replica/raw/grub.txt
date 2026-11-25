@@ -1,0 +1,30 @@
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT=saved
+GRUB_DISABLE_SUBMENU=true
+GRUB_TERMINAL_OUTPUT="console"
+GRUB_CMDLINE_LINUX="rhgb quiet"
+GRUB_DISABLE_RECOVERY="true"
+GRUB_ENABLE_BLSCFG=true
+
+index=0
+kernel="/boot/vmlinuz-7.3.3-100.fc43.x86_64"
+args="ro rootflags=subvol=root rhgb quiet $tuned_params"
+root="UUID=ccf7a767-b3de-40e9-b953-3d0a49ac5880"
+initrd="/boot/initramfs-7.3.3-100.fc43.x86_64.img $tuned_initrd"
+title="Fedora Linux (7.3.3-100.fc43.x86_64) 43 (Workstation Edition)"
+id="e251dbe0cb974a98b456a31c9bf0510f-7.3.3-100.fc43.x86_64"
+index=1
+kernel="/boot/vmlinuz-7.2.15-100.fc43.x86_64"
+args="ro rootflags=subvol=root rhgb quiet $tuned_params"
+root="UUID=ccf7a767-b3de-40e9-b953-3d0a49ac5880"
+initrd="/boot/initramfs-7.2.15-100.fc43.x86_64.img $tuned_initrd"
+title="Fedora Linux (7.2.15-100.fc43.x86_64) 43 (Workstation Edition)"
+id="e251dbe0cb974a98b456a31c9bf0510f-7.2.15-100.fc43.x86_64"
+index=2
+kernel="/boot/vmlinuz-0-rescue-e251dbe0cb974a98b456a31c9bf0510f"
+args="ro rootflags=subvol=root rhgb quiet"
+root="UUID=ccf7a767-b3de-40e9-b953-3d0a49ac5880"
+initrd="/boot/initramfs-0-rescue-e251dbe0cb974a98b456a31c9bf0510f.img"
+title="Fedora Linux (0-rescue-e251dbe0cb974a98b456a31c9bf0510f) 43 (Workstation Edition)"
+id="e251dbe0cb974a98b456a31c9bf0510f-0-rescue"

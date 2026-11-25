@@ -1,0 +1,100 @@
+total 28
+drwxr-xr-x. 1 andrey andrey    56 May 13  2026 .
+drwx------. 1 andrey andrey   638 Nov 16 12:15 ..
+-rw-r--r--. 1 andrey andrey   881 May 13  2026 docker-compose.yml
+-rw-r--r--. 1 andrey andrey 23081 May 12  2026 initdb.sql
+===== compose
+services:
+  guac-mysql:
+    image: mysql:8
+    container_name: guac-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: Motankadoll2468
+      MYSQL_DATABASE: guacamole_db
+      MYSQL_USER: guacuser
+      MYSQL_PASSWORD: guacpass
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - guacnet
+  guacd:
+    image: guacamole/guacd
+    container_name: guacd
+    restart: unless-stopped
+    networks:
+      - guacnet
+  guacamole:
+    image: guacamole/guacamole
+    container_name: guacamole
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      GUACD_HOSTNAME: guacd
+      MYSQL_HOSTNAME: guac-mysql
+      MYSQL_DATABASE: guacamole_db
+      MYSQL_USER: guacuser
+      MYSQL_PASSWORD: guacpass
+    depends_on:
+      - guacd
+      - guac-mysql
+    networks:
+      - guacnet
+
+volumes:
+  mysql_data:
+
+networks:
+  guacnet:
+===== env
+cat: /home/andrey/guac-mysql/.env: No such file or directory
+===== other
+--- /home/andrey/guac-mysql/*.env
+cat: '/home/andrey/guac-mysql/*.env': No such file or directory
+--- /home/andrey/guac-mysql/docker-compose.yml
+services:
+  guac-mysql:
+    image: mysql:8
+    container_name: guac-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: Motankadoll2468
+      MYSQL_DATABASE: guacamole_db
+      MYSQL_USER: guacuser
+      MYSQL_PASSWORD: guacpass
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - guacnet
+  guacd:
+    image: guacamole/guacd
+    container_name: guacd
+    restart: unless-stopped
+    networks:
+      - guacnet
+  guacamole:
+    image: guacamole/guacamole
+    container_name: guacamole
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      GUACD_HOSTNAME: guacd
+      MYSQL_HOSTNAME: guac-mysql
+      MYSQL_DATABASE: guacamole_db
+      MYSQL_USER: guacuser
+      MYSQL_PASSWORD: guacpass
+    depends_on:
+      - guacd
+      - guac-mysql
+    networks:
+      - guacnet
+
+volumes:
+  mysql_data:
+
+networks:
+  guacnet:
+--- /home/andrey/guac-mysql/*.yaml
+cat: '/home/andrey/guac-mysql/*.yaml': No such file or directory

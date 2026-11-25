@@ -1,0 +1,18 @@
+openjdk version "25.0.5" 2026-10-20
+OpenJDK Runtime Environment (Red_Hat-25.0.5.0.8-3) (build 25.0.5+8)
+OpenJDK 64-Bit Server VM (Red_Hat-25.0.5.0.8-3) (build 25.0.5+8, mixed mode, sharing)
+
+/usr/lib/jvm/java-25-openjdk/bin/java
+
+java - status is auto.
+ link currently points to /usr/lib/jvm/java-25-openjdk/bin/java
+/usr/lib/jvm/java-25-openjdk/bin/java - priority 25000508
+ follower alt-java: /usr/lib/jvm/java-25-openjdk/bin/alt-java
+ follower keytool: /usr/lib/jvm/java-25-openjdk/bin/keytool
+ follower rmiregistry: /usr/lib/jvm/java-25-openjdk/bin/rmiregistry
+ follower jre: /usr/lib/jvm/java-25-openjdk
+ follower alt-java.1.gz: /usr/lib/jvm/java-25-openjdk/man/man1/alt-java.1
+ follower java.1.gz: /usr/lib/jvm/java-25-openjdk/man/man1/java.1
+ follower keytool.1.gz: /usr/lib/jvm/java-25-openjdk/man/man1/keytool.1
+ follower rmiregistry.1.gz: /usr/lib/jvm/java-25-openjdk/man/man1/rmiregistry.1
+Current `best' version is /usr/lib/jvm/java-25-openjdk/bin/java.

@@ -1,0 +1,66 @@
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eno1             UP             192.168.0.3/24 2601:189:4101:b7f0:829f:870:7c1f:b0b2/64 fe80::1dfe:5104:1cfa:449a/64 
+br-938a01267881  UP             172.20.0.1/16 fe80::c888:8aff:fe54:4204/64 
+br-cdb36edfa113  DOWN           172.18.0.1/16 
+br-f56ebf149b04  DOWN           172.19.0.1/16 
+docker0          DOWN           172.17.0.1/16 
+veth3e75bbc@if2  UP             fe80::5802:feff:fe98:a990/64 
+veth119048c@if2  UP             fe80::10fa:d8ff:fe3f:6968/64 
+vethb31eea1@if2  UP             fe80::14f5:83ff:fea1:ff79/64 
+
+default via 192.168.0.1 dev eno1 proto dhcp src 192.168.0.3 metric 100 
+172.17.0.0/16 dev docker0 proto kernel scope link src 172.17.0.1 linkdown 
+172.18.0.0/16 dev br-cdb36edfa113 proto kernel scope link src 172.18.0.1 linkdown 
+172.19.0.0/16 dev br-f56ebf149b04 proto kernel scope link src 172.19.0.1 linkdown 
+172.20.0.0/16 dev br-938a01267881 proto kernel scope link src 172.20.0.1 
+192.168.0.0/24 dev eno1 proto kernel scope link src 192.168.0.3 metric 100 
+
+# This is /run/systemd/resolve/stub-resolv.conf managed by man:systemd-resolved(8).
+# Do not edit.
+#
+# This file might be symlinked as /etc/resolv.conf. If you're looking at
+# /etc/resolv.conf and seeing this text, you have followed the symlink.
+#
+# This is a dynamic resolv.conf file for connecting local clients to the
+# internal DNS stub resolver of systemd-resolved. This file lists all
+# configured search domains.
+#
+# Run "resolvectl status" to see details about the uplink DNS servers
+# currently in use.
+#
+# Third party programs should typically not access this file directly, but only
+# through the symlink at /etc/resolv.conf. To manage man:resolv.conf(5) in a
+# different way, replace this symlink by a static file or a different symlink.
+#
+# See man:systemd-resolved.service(8) for details about the supported modes of
+# operation for /etc/resolv.conf.
+
+nameserver 127.0.0.53
+options edns0 trust-ad
+search .
+
+# Loopback entries; do not change.
+# For historical reasons, localhost precedes localhost.localdomain:
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+# See hosts(5) for proper format and other examples:
+# 192.168.1.10 foo.example.org foo
+# 192.168.1.13 bar.example.org bar
+
+Wired connection 1:75f34f27-7feb-3955-9149-0fceb9909cdf:802-3-ethernet:eno1:yes
+br-938a01267881:4ac6b188-f7fd-4ea6-aecc-bad2b364d86c:bridge:br-938a01267881:yes
+lo:fc999819-05f1-40a4-9efa-a8d89db1f544:loopback:lo:yes
+br-cdb36edfa113:bf7034b7-a6e8-4a39-80f5-5f428c0f0d16:bridge:br-cdb36edfa113:yes
+br-f56ebf149b04:322ecbe6-2ffe-4b88-af8c-996e96fa3826:bridge:br-f56ebf149b04:yes
+docker0:f66fbc97-9ecf-47da-a873-15fc698d5f5a:bridge:docker0:yes
+BESThome:552d7e73-878d-46d9-9f69-5ef8afb6791c:802-11-wireless::yes
+wireless:3fa881ee-c7c7-4159-a1a6-9cca66d90946:802-11-wireless::yes
+
+Wired connection 1:75f34f27-7feb-3955-9149-0fceb9909cdf:802-3-ethernet:eno1
+br-938a01267881:4ac6b188-f7fd-4ea6-aecc-bad2b364d86c:bridge:br-938a01267881
+lo:fc999819-05f1-40a4-9efa-a8d89db1f544:loopback:lo
+br-cdb36edfa113:bf7034b7-a6e8-4a39-80f5-5f428c0f0d16:bridge:br-cdb36edfa113
+br-f56ebf149b04:322ecbe6-2ffe-4b88-af8c-996e96fa3826:bridge:br-f56ebf149b04
+docker0:f66fbc97-9ecf-47da-a873-15fc698d5f5a:bridge:docker0
+BESThome:552d7e73-878d-46d9-9f69-5ef8afb6791c:802-11-wireless:
+wireless:3fa881ee-c7c7-4159-a1a6-9cca66d90946:802-11-wireless:

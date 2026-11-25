@@ -1,0 +1,19 @@
+NEXT                            LEFT LAST                               PASSED UNIT                         ACTIVATES
+Mon 2026-11-23 14:28:00 EST 2min 26s Mon 2026-11-23 13:58:00 EST     27min ago pmie_check.timer             pmie_check.service
+Mon 2026-11-23 14:28:10 EST 2min 36s Mon 2026-11-23 13:58:19 EST     27min ago pmie_farm_check.timer        pmie_farm_check.service
+Mon 2026-11-23 14:35:00 EST     9min Mon 2026-11-23 11:14:27 EST  3h 11min ago dnf-makecache.timer          dnf-makecache.service
+Mon 2026-11-23 14:45:54 EST    20min Mon 2026-11-23 00:26:44 EST       13h ago certbot-renew.timer          certbot-renew.service
+Mon 2026-11-23 14:50:00 EST    24min Mon 2026-11-23 14:20:00 EST      5min ago pmlogger_check.timer         pmlogger_check.service
+Mon 2026-11-23 14:50:10 EST    24min Mon 2026-11-23 14:20:11 EST      5min ago pmlogger_farm_check.timer    pmlogger_farm_check.service
+Tue 2026-11-24 00:00:00 EST       9h Mon 2026-11-23 00:00:00 EST       14h ago unbound-anchor.timer         unbound-anchor.service
+Tue 2026-11-24 00:08:00 EST       9h Mon 2026-11-23 00:08:00 EST       14h ago pmie_daily.timer             pmie_daily.service
+Tue 2026-11-24 00:10:00 EST       9h Mon 2026-11-23 00:10:03 EST       14h ago pmlogger_daily.timer         pmlogger_daily.service
+Tue 2026-11-24 00:30:46 EST      10h Mon 2026-11-23 00:46:23 EST       13h ago logrotate.timer              logrotate.service
+Tue 2026-11-24 00:56:57 EST      10h Mon 2026-11-23 00:46:32 EST       13h ago plocate-updatedb.timer       plocate-updatedb.service
+Tue 2026-11-24 01:14:43 EST      10h Mon 2026-11-23 01:14:43 EST       13h ago systemd-tmpfiles-clean.timer systemd-tmpfiles-clean.service
+Sun 2026-11-29 01:00:00 EST   5 days Sun 2026-11-22 01:00:00 EST 1 day 13h ago raid-check.timer             raid-check.service
+Mon 2026-11-30 00:04:42 EST   6 days Mon 2026-11-23 00:09:32 EST       14h ago dnf5-automatic.timer         dnf5-automatic.service
+Mon 2026-11-30 00:05:55 EST   6 days Mon 2026-11-23 00:57:23 EST       13h ago fstrim.timer                 fstrim.service
+-                                  - -                                       - rpm-ostree-countme.timer     rpm-ostree-countme.service
+
+16 timers listed.

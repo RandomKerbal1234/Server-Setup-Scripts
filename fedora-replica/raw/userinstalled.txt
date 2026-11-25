@@ -1,0 +1,6 @@
+---
+GConf2-devel-0:3.2.6-47.fc43.x86_64
+ModemManager-0:1.24.2-1.fc43.x86_64
+NetworkManager-1:1.54.3-3.fc43.x86_64
+NetworkManager-adsl-1:1.54.3-3.fc43.x86_64
+NetworkManager-bluetooth-1:1.54.3-3.fc43.x86_64

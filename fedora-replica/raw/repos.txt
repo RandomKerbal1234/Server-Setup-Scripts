@@ -1,0 +1,279 @@
+45drives-enterprise.repo
+codifryed-CoolerControl-fedora-43.repo
+_copr:copr.fedorainfracloud.org:codifryed:CoolerControl.repo
+_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
+fedora-cisco-openh264.repo
+fedora.repo
+fedora-updates.repo
+fedora-updates-testing.repo
+google-chrome.repo
+rpmfusion-nonfree-nvidia-driver.repo
+rpmfusion-nonfree-steam.repo
+===== /etc/yum.repos.d/45drives-enterprise.repo
+[45drives_enterprise]
+enabled = 1
+priority = 1
+gpgcheck = 1
+repo_gpgcheck = 1
+baseurl = https://repo.45drives.com/enterprise/rocky/el$releasever/stable
+gpgkey = https://repo.45drives.com/key/gpg.asc
+name = 45Drives Enterprise $releasever Repo
+
+[45drives_enterprise_testing]
+enabled = 0
+priority = 1
+gpgcheck = 1
+repo_gpgcheck = 1
+baseurl = https://repo.45drives.com/enterprise/rocky/el$releasever/testing
+gpgkey = https://repo.45drives.com/key/gpg.asc
+name = 45Drives Enterprise $releasever Testing Repo
+===== /etc/yum.repos.d/codifryed-CoolerControl-fedora-43.repo
+[copr:copr.fedorainfracloud.org:codifryed:CoolerControl]
+name=Copr repo for CoolerControl owned by codifryed
+baseurl=https://download.copr.fedorainfracloud.org/results/codifryed/CoolerControl/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/codifryed/CoolerControl/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+===== /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:codifryed:CoolerControl.repo
+[copr:copr.fedorainfracloud.org:codifryed:CoolerControl]
+name=Copr repo for CoolerControl owned by codifryed
+baseurl=https://download.copr.fedorainfracloud.org/results/codifryed/CoolerControl/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/codifryed/CoolerControl/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+===== /etc/yum.repos.d/_copr:copr.fedorainfracloud.org:phracek:PyCharm.repo
+[copr:copr.fedorainfracloud.org:phracek:PyCharm]
+name=Copr repo for PyCharm owned by phracek
+baseurl=https://download.copr.fedorainfracloud.org/results/phracek/PyCharm/fedora-$releasever-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://download.copr.fedorainfracloud.org/results/phracek/PyCharm/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1
+===== /etc/yum.repos.d/fedora-cisco-openh264.repo
+[fedora-cisco-openh264]
+name=Fedora $releasever openh264 (From Cisco) - $basearch
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-cisco-openh264-$releasever&arch=$basearch
+type=rpm
+enabled=1
+metadata_expire=14d
+repo_gpgcheck=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=True
+
+[fedora-cisco-openh264-debuginfo]
+name=Fedora $releasever openh264 (From Cisco) - $basearch - Debug
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-cisco-openh264-debug-$releasever&arch=$basearch
+type=rpm
+enabled=0
+metadata_expire=14d
+repo_gpgcheck=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=True
+
+[fedora-cisco-openh264-source]
+name=Fedora $releasever openh264 (From Cisco) - $basearch - Source
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-cisco-openh264-source-$releasever&arch=$basearch
+type=rpm
+enabled=0
+metadata_expire=14d
+repo_gpgcheck=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=True
+===== /etc/yum.repos.d/fedora.repo
+[fedora]
+name=Fedora $releasever - $basearch
+#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/os/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&arch=$basearch
+enabled=1
+countme=1
+metadata_expire=7d
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[fedora-debuginfo]
+name=Fedora $releasever - $basearch - Debug
+#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/debug/tree/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&arch=$basearch
+enabled=0
+metadata_expire=7d
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[fedora-source]
+name=Fedora $releasever - Source
+#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/source/tree/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&arch=$basearch
+enabled=0
+metadata_expire=7d
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+===== /etc/yum.repos.d/fedora-updates.repo
+[updates]
+name=Fedora $releasever - $basearch - Updates
+#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$releasever&arch=$basearch
+enabled=1
+countme=1
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[updates-debuginfo]
+name=Fedora $releasever - $basearch - Updates - Debug
+#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/debug/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-debug-f$releasever&arch=$basearch
+enabled=0
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[updates-source]
+name=Fedora $releasever - Updates Source
+#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/SRPMS/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-source-f$releasever&arch=$basearch
+enabled=0
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+===== /etc/yum.repos.d/fedora-updates-testing.repo
+[updates-testing]
+name=Fedora $releasever - $basearch - Test Updates
+#baseurl=http://download.example/pub/fedora/linux/updates/testing/$releasever/Everything/$basearch/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-testing-f$releasever&arch=$basearch
+enabled=0
+countme=1
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[updates-testing-debuginfo]
+name=Fedora $releasever - $basearch - Test Updates Debug
+#baseurl=http://download.example/pub/fedora/linux/updates/testing/$releasever/Everything/$basearch/debug/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-testing-debug-f$releasever&arch=$basearch
+enabled=0
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+
+[updates-testing-source]
+name=Fedora $releasever - Test Updates Source
+#baseurl=http://download.example/pub/fedora/linux/updates/testing/$releasever/Everything/SRPMS/
+metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-testing-source-f$releasever&arch=$basearch
+enabled=0
+repo_gpgcheck=0
+type=rpm
+gpgcheck=1
+metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+===== /etc/yum.repos.d/google-chrome.repo
+[google-chrome]
+name=google-chrome
+baseurl=https://dl.google.com/linux/chrome/rpm/stable/x86_64
+enabled=1
+gpgcheck=1
+gpgkey=https://dl.google.com/linux/linux_signing_key.pub
+===== /etc/yum.repos.d/rpmfusion-nonfree-nvidia-driver.repo
+[rpmfusion-nonfree-nvidia-driver]
+name=RPM Fusion for Fedora $releasever - Nonfree - NVIDIA Driver
+#baseurl=http://download1.rpmfusion.org/nonfree/fedora/nvidia-driver/$releasever/$basearch/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=nonfree-fedora-nvidia-driver-$releasever&arch=$basearch
+enabled=1
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-fedora-$releasever
+skip_if_unavailable=True
+
+[rpmfusion-nonfree-nvidia-driver-debuginfo]
+name=RPM Fusion for Fedora $releasever - Nonfree - NVIDIA Driver Debug
+#baseurl=http://download1.rpmfusion.org/nonfree/fedora/nvidia-driver/$releasever/$basearch/debug/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=nonfree-fedora-nvidia-driver-debug-$releasever&arch=$basearch
+enabled=0
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-fedora-$releasever
+skip_if_unavailable=True
+
+[rpmfusion-nonfree-nvidia-driver-source]
+name=RPM Fusion for Fedora $releasever - Nonfree - NVIDIA Driver Source
+#baseurl=http://download1.rpmfusion.org/nonfree/fedora/nvidia-driver/$releasever/SRPMS/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=nonfree-fedora-nvidia-driver-source-$releasever&arch=$basearch
+enabled=0
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-fedora-$releasever
+skip_if_unavailable=True
+===== /etc/yum.repos.d/rpmfusion-nonfree-steam.repo
+[rpmfusion-nonfree-steam]
+name=RPM Fusion for Fedora $releasever - Nonfree - Steam
+#baseurl=http://download1.rpmfusion.org/nonfree/fedora/steam/$releasever/$basearch/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=nonfree-fedora-steam-$releasever&arch=$basearch
+enabled=1
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-fedora-$releasever
+skip_if_unavailable=True
+
+[rpmfusion-nonfree-steam-debuginfo]
+name=RPM Fusion for Fedora $releasever - Nonfree - Steam Debug
+#baseurl=http://download1.rpmfusion.org/nonfree/fedora/steam/$releasever/$basearch/debug/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=nonfree-fedora-steam-debug-$releasever&arch=$basearch
+enabled=0
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-fedora-$releasever
+skip_if_unavailable=True
+
+[rpmfusion-nonfree-steam-source]
+name=RPM Fusion for Fedora $releasever - Nonfree - Steam Source
+#baseurl=http://download1.rpmfusion.org/nonfree/fedora/steam/$releasever/SRPMS/
+metalink=https://mirrors.rpmfusion.org/metalink?repo=nonfree-fedora-steam-source-$releasever&arch=$basearch
+enabled=0
+type=rpm-md
+gpgcheck=1
+repo_gpgcheck=0
+gpgkey=file:///usr/share/distribution-gpg-keys/rpmfusion/RPM-GPG-KEY-rpmfusion-nonfree-fedora-$releasever
+skip_if_unavailable=True

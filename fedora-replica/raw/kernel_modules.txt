@@ -1,0 +1,118 @@
+/etc/modprobe.d:
+total 44
+drwxr-xr-x. 1 root root  434 Oct 12 00:54 .
+drwxr-xr-x. 1 root root 5298 Nov 23 00:09 ..
+-rw-r--r--. 1 root root  375 Nov  5 19:00 batman-adv-blacklist.conf
+-rw-r--r--. 1 root root  158 Nov 12  2025 firewalld-sysctls.conf
+-rw-r--r--. 1 root root  371 Nov  5 19:00 floppy-blacklist.conf
+-rw-r--r--. 1 root root  358 Mar 23  2026 kvm.conf
+-rw-r--r--. 1 root root  373 Nov  5 19:00 l2tp_eth-blacklist.conf
+-rw-r--r--. 1 root root  377 Nov  5 19:00 l2tp_netlink-blacklist.conf
+-rw-r--r--. 1 root root  373 Nov  5 19:00 l2tp_ppp-blacklist.conf
+-rw-r--r--. 1 root root  747 Aug 14 20:00 lockd.conf
+-rw-r--r--. 1 root root  101 Jun 29 15:24 nvdimm-security.conf
+-rw-r--r--. 1 root root  368 Nov  5 19:00 rds-blacklist.conf
+-rw-r--r--. 1 root root    0 Mar  7  2026 tuned.conf
+-rw-r--r--. 1 root root  111 Mar 23  2026 vhost.conf
+
+/etc/modules-load.d:
+total 0
+drwxr-xr-x. 1 root root    0 Sep 14 20:00 .
+drwxr-xr-x. 1 root root 5298 Nov 23 00:09 ..
+
+===== /etc/modprobe.d/batman-adv-blacklist.conf
+# This kernel module can be automatically loaded by non-root users. To
+# enhance system security, the module is blacklisted by default to ensure
+# system administrators make the module available for use as needed.
+# See https://access.redhat.com/articles/3760101 for more details.
+#
+# Remove the blacklist by adding a comment # at the start of the line.
+blacklist batman-adv
+===== /etc/modprobe.d/firewalld-sysctls.conf
+install nf_conntrack /sbin/modprobe --ignore-install nf_conntrack $CMDLINE_OPTS && /sbin/sysctl --quiet --pattern 'net[.]netfilter[.]nf_conntrack.*' --system
+===== /etc/modprobe.d/floppy-blacklist.conf
+# This kernel module can be automatically loaded by non-root users. To
+# enhance system security, the module is blacklisted by default to ensure
+# system administrators make the module available for use as needed.
+# See https://access.redhat.com/articles/3760101 for more details.
+#
+# Remove the blacklist by adding a comment # at the start of the line.
+blacklist floppy
+===== /etc/modprobe.d/kvm.conf
+# Setting modprobe kvm_intel/kvm_amd nested = 1
+# only enables Nested Virtualization until the next reboot or
+# module reload. Uncomment the option applicable
+# to your system below to enable the feature permanently.
+#
+# User changes in this file are preserved across upgrades.
+#
+# For Intel
+#options kvm_intel nested=1
+#
+# For AMD
+#options kvm_amd nested=1
+===== /etc/modprobe.d/l2tp_eth-blacklist.conf
+# This kernel module can be automatically loaded by non-root users. To
+# enhance system security, the module is blacklisted by default to ensure
+# system administrators make the module available for use as needed.
+# See https://access.redhat.com/articles/3760101 for more details.
+#
+# Remove the blacklist by adding a comment # at the start of the line.
+blacklist l2tp_eth
+===== /etc/modprobe.d/l2tp_netlink-blacklist.conf
+# This kernel module can be automatically loaded by non-root users. To
+# enhance system security, the module is blacklisted by default to ensure
+# system administrators make the module available for use as needed.
+# See https://access.redhat.com/articles/3760101 for more details.
+#
+# Remove the blacklist by adding a comment # at the start of the line.
+blacklist l2tp_netlink
+===== /etc/modprobe.d/l2tp_ppp-blacklist.conf
+# This kernel module can be automatically loaded by non-root users. To
+# enhance system security, the module is blacklisted by default to ensure
+# system administrators make the module available for use as needed.
+# See https://access.redhat.com/articles/3760101 for more details.
+#
+# Remove the blacklist by adding a comment # at the start of the line.
+blacklist l2tp_ppp
+===== /etc/modprobe.d/lockd.conf
+#
+# Set the NFS lock manager grace period. n is measured in seconds. 
+#options lockd nlm_grace_period=90
+#
+# Set the TCP port that the NFS lock manager should use. 
+# port must be a valid TCP port value (1-65535).
+#options lockd nlm_tcpport
+#
+# Set the UDP port that the NFS lock manager should use.
+# port must be a valid UDP port value (1-65535).
+#options lockd nlm_udpport
+#
+# Set the maximum number of outstanding connections 
+#options lockd nlm_max_connections=1024
+#
+# Set the default time value for the NFS lock manager
+# in seconds. Default is 10 secs (min 3 max 20)
+#options lockd nlm_timeout=10
+#
+# Choose whether to record the caller_name or IP address
+# this peer in the local rpc.statd's database.
+#options lockd nsm_use_hostnames=0
+
+===== /etc/modprobe.d/nvdimm-security.conf
+install libnvdimm /usr/bin/ndctl load-keys ; /sbin/modprobe --ignore-install libnvdimm $CMDLINE_OPTS
+===== /etc/modprobe.d/rds-blacklist.conf
+# This kernel module can be automatically loaded by non-root users. To
+# enhance system security, the module is blacklisted by default to ensure
+# system administrators make the module available for use as needed.
+# See https://access.redhat.com/articles/3760101 for more details.
+#
+# Remove the blacklist by adding a comment # at the start of the line.
+blacklist rds
+===== /etc/modprobe.d/tuned.conf
+===== /etc/modprobe.d/vhost.conf
+# Increase default vhost memory map limit to match
+# KVM's memory slot limit
+options vhost max_mem_regions=509
+===== /etc/modules-load.d/*
+cat: '/etc/modules-load.d/*': No such file or directory

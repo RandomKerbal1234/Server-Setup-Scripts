@@ -1,0 +1,37 @@
+enabled
+active
+
+guacamole|guacamole/guacamole|Up 7 days|0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp
+guac-mysql|mysql:8|Up 7 days|3306/tcp, 33060/tcp
+guacd|guacamole/guacd|Up 7 days (healthy)|4822/tcp
+
+guacamole/guacamole:latest|1.12GB
+mysql:8|1.12GB
+guacamole/guacd:latest|380MB
+
+NETWORK ID     NAME                 DRIVER    SCOPE
+1bd5c0cc3eb1   bridge               bridge    local
+cdb36edfa113   guac-mysql_default   bridge    local
+938a01267881   guac-mysql_guacnet   bridge    local
+f56ebf149b04   guacnet              bridge    local
+556c07be82f8   host                 host      local
+decb80d509cd   none                 null      local
+
+DRIVER    VOLUME NAME
+local     89c17bf31074482db977c003bbcfba4ce5bfa06049998ae4332d4f251a40864f
+local     guac-mysql_mysql_data
+
+cat: /etc/docker/daemon.json: No such file or directory
+
+total 12
+drwxr-xr-x. 1 root root  184 Sep 14 20:00 .
+drwxr-xr-x. 1 root root 5298 Nov 23 00:09 ..
+drwxr-xr-x. 1 root root    0 Sep 14 20:00 certs.d
+drwxr-xr-x. 1 root root    0 Sep 14 20:00 networks
+drwxr-xr-x. 1 root root   14 Sep 14 20:00 oci
+-rw-r--r--. 1 root root  256 Sep 14 20:00 policy.json
+-rw-r--r--. 1 root root 3935 Sep 14 20:00 registries.conf
+drwxr-xr-x. 1 root root   38 Sep 14 20:00 registries.conf.d
+drwxr-xr-x. 1 root root  132 Sep 14 20:00 registries.d
+drwxr-xr-x. 1 root root    0 Sep 14 20:00 systemd
+-rw-r--r--. 1 root root  699 Sep 16  2025 toolbox.conf

@@ -1,0 +1,21 @@
+644 root:root /etc/passwd
+644 root:root /etc/group
+0 root:root /etc/shadow
+0 root:root /etc/gshadow
+440 root:root /etc/sudoers
+755 root:root /etc/ssh
+
+total 612
+drwxr-xr-x. 1 root root    344 Sep 14 20:00 .
+drwxr-xr-x. 1 root root   5298 Nov 23 00:09 ..
+-rw-r--r--. 1 root root 592446 Oct 21 20:00 moduli
+-rw-r--r--. 1 root root   1916 Oct 21 20:00 ssh_config
+drwxr-xr-x. 1 root root    128 Sep 14 20:00 ssh_config.d
+-rw-------. 1 root root   3834 Oct 21 20:00 sshd_config
+drwx------. 1 root root     88 Oct 21 20:00 sshd_config.d
+-rw-------. 1 root root    492 Apr  1  2026 ssh_host_ecdsa_key
+-rw-r--r--. 1 root root    162 Apr  1  2026 ssh_host_ecdsa_key.pub
+-rw-------. 1 root root    387 Apr  1  2026 ssh_host_ed25519_key
+-rw-r--r--. 1 root root     82 Apr  1  2026 ssh_host_ed25519_key.pub
+-rw-------. 1 root root   2578 Apr  1  2026 ssh_host_rsa_key
+-rw-r--r--. 1 root root    554 Apr  1  2026 ssh_host_rsa_key.pub

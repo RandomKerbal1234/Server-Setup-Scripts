@@ -1,0 +1,56 @@
+  abrt-journal-core.service  loaded active running ABRT coredumpctl message creator
+  abrt-oops.service          loaded active running ABRT kernel log watcher
+  abrt-xorg.service          loaded active running ABRT Xorg log watcher
+  abrtd.service              loaded active running ABRT Daemon
+  accounts-daemon.service    loaded active running Accounts Service
+  alsa-state.service         loaded active running Manage Sound Card State (restore and store)
+  atd.service                loaded active running Deferred execution scheduler
+  auditd.service             loaded active running Security Audit Logging Service
+  avahi-daemon.service       loaded active running Avahi mDNS/DNS-SD Stack
+  chronyd.service            loaded active running NTP client/server
+  colord.service             loaded active running Manage, Install and Generate Color Profiles
+  containerd.service         loaded active running containerd container runtime
+  coolercontrold.service     loaded active running CoolerControl Daemon
+  crond.service              loaded active running Command Scheduler
+  cups.service               loaded active running CUPS Scheduler
+  dbus-broker.service        loaded active running D-Bus System Message Bus
+  dnf5daemon-server.service  loaded active running DNF daemon
+  docker.service             loaded active running Docker Application Container Engine
+  firewalld.service          loaded active running firewalld - dynamic firewall daemon
+  gdm.service                loaded active running GNOME Display Manager
+  gssproxy.service           loaded active running GSSAPI Proxy Daemon
+  irqbalance.service         loaded active running irqbalance daemon
+  low-memory-monitor.service loaded active running Low Memory Monitor
+  mcelog.service             loaded active running Machine Check Exception Logging Daemon
+  ModemManager.service       loaded active running Modem Manager
+  NetworkManager.service     loaded active running Network Manager
+  nginx.service              loaded active running The nginx HTTP and reverse proxy server
+  pcscd.service              loaded active running PC/SC Smart Card Daemon
+  plymouth-start.service     loaded active running Show Plymouth Boot Screen
+  pmcd.service               loaded active running Performance Metrics Collector Daemon
+  pmie.service               loaded active running Performance Metrics Inference Engine
+  pmie_farm.service          loaded active running pmie farm service
+  pmlogger.service           loaded active running PCP primary archive logger
+  pmlogger_farm.service      loaded active running pmlogger farm service
+  polkit.service             loaded active running Authorization Manager
+  rsyslog.service            loaded active running System Logging Service
+  rtkit-daemon.service       loaded active running RealtimeKit Scheduling Policy Service
+  smartd.service             loaded active running Self Monitoring and Reporting Technology (SMART) Daemon
+  sshd.service               loaded active running OpenSSH server daemon
+  switcheroo-control.service loaded active running Switcheroo Control Proxy service
+  systemd-hostnamed.service  loaded active running Hostname Service
+  systemd-journald.service   loaded active running Journal Service
+  systemd-logind.service     loaded active running User Login Management
+  systemd-machined.service   loaded active running Virtual Machine and Container Registration Service
+  systemd-resolved.service   loaded active running Network Name Resolution
+  systemd-udevd.service      loaded active running Rule-based Manager for Device Events and Files
+  systemd-userdbd.service    loaded active running User Database Manager
+  thermald.service           loaded active running Thermal Daemon Service
+  tuned-ppd.service          loaded active running PPD-to-TuneD API Translation Daemon
+  tuned.service              loaded active running Dynamic System Tuning Daemon
+  udisks2.service            loaded active running Disk Manager
+  upower.service             loaded active running Daemon for power management
+  uresourced.service         loaded active running User resource assignment daemon
+  user@1000.service          loaded active running User Manager for UID 1000
+  user@60578.service         loaded active running User Manager for UID 60578
+  wpa_supplicant.service     loaded active running WPA supplicant

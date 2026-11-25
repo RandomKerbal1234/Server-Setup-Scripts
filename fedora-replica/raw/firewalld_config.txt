@@ -1,0 +1,21 @@
+total 28
+drwxr-x---. 1 root root  254 Nov 12  2025 .
+drwxr-xr-x. 1 root root 5298 Nov 23 00:09 ..
+lrwxrwxrwx. 1 root root   26 Oct 22  2025 firewalld.conf -> firewalld-workstation.conf
+-rw-r--r--. 1 root root 4693 Nov 12  2025 firewalld-server.conf
+-rw-r--r--. 1 root root 4687 Nov 12  2025 firewalld-standard.conf
+-rw-r--r--. 1 root root 4697 Nov 12  2025 firewalld-workstation.conf
+drwxr-x---. 1 root root    0 Nov 12  2025 helpers
+drwxr-x---. 1 root root    0 Nov 12  2025 icmptypes
+drwxr-x---. 1 root root    0 Nov 12  2025 ipsets
+drwxr-x---. 1 root root   42 May 11  2026 policies
+drwxr-x---. 1 root root    0 Nov 12  2025 services
+drwxr-x---. 1 root root  112 May 11  2026 zones
+
+644 root:root 213 /etc/firewalld/policies/docker-forwarding.xml
+644 root:root 589 /etc/firewalld/zones/FedoraWorkstation.xml
+644 root:root 563 /etc/firewalld/zones/FedoraWorkstation.xml.old
+644 root:root 192 /etc/firewalld/zones/docker.xml
+644 root:root 4693 /etc/firewalld/firewalld-server.conf
+644 root:root 4687 /etc/firewalld/firewalld-standard.conf
+644 root:root 4697 /etc/firewalld/firewalld-workstation.conf

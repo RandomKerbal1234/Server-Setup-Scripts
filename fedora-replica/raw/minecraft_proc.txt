@@ -1,0 +1,5 @@
+minecra+    4035  7-13:25:44 /opt/java/openjdk/bin/java -Djava.util.logging.config.file=/tmp/catalina-base.hBKVFC6QJj/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dignore.endorsed.dirs= -classpath /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar -Dcatalina.base=/tmp/catalina-base.hBKVFC6QJj -Dcatalina.home=/usr/local/tomcat -Djava.io.tmpdir=/tmp/catalina-base.hBKVFC6QJj/temp org.apache.catalina.startup.Bootstrap start
+minecra+  643969  1-20:27:55 java -Xmx18g -Xms512M -Xloggc:log.txt -jar server.jar nogui
+
+minecraft.service                                                             static          -
+

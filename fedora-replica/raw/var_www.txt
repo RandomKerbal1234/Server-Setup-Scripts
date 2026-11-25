@@ -1,0 +1,13 @@
+total 0
+drwxr-xr-x. 1 root root  32 Sep 30 20:00 .
+drwxr-xr-x. 1 root root 200 Mar  2  2026 ..
+drwxr-xr-x. 1 root root   0 Sep 30 20:00 cgi-bin
+drwxr-xr-x. 1 root root  86 Jun 24 17:12 files
+drwxr-xr-x. 1 root root   0 Sep 30 20:00 html
+
+d 755 root:root 86 /var/www/files
+d 755 root:root 20 /var/www/files/docker
+d 755 root:root 56 /var/www/files/docker/guac-mysql
+f 755 root:root 947 /var/www/files/cockpit.conf
+f 755 root:root 1671 /var/www/files/homelab.conf
+f 755 root:root 5176758157 /var/www/files/server.tar.gz

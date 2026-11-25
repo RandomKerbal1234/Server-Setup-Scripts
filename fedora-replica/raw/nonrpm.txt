@@ -1,0 +1,96 @@
+/opt:
+total 0
+drwxr-xr-x. 1 root root  12 Apr  1  2026 .
+dr-xr-xr-x. 1 root root 170 Mar  4  2026 ..
+drwxr-xr-x. 1 root root  12 Apr  1  2026 google
+
+/srv:
+total 0
+drwxr-xr-x. 1 root root   0 Jul 29  2025 .
+dr-xr-xr-x. 1 root root 170 Mar  4  2026 ..
+
+/usr/local:
+total 4
+drwxr-xr-x. 1 root root  90 Oct 22  2025 .
+drwxr-xr-x. 1 root root 168 Mar  2  2026 ..
+drwxr-xr-x. 1 root root  12 May  5  2026 bin
+drwxr-xr-x. 1 root root   0 Jul 29  2025 etc
+drwxr-xr-x. 1 root root   0 Jul 29  2025 games
+drwxr-xr-x. 1 root root   0 Jul 29  2025 include
+drwxr-xr-x. 1 root root   0 Jul 29  2025 lib
+drwxr-xr-x. 1 root root   6 Oct 22  2025 lib64
+drwxr-xr-x. 1 root root   0 Jul 29  2025 libexec
+lrwxrwxrwx. 1 root root   3 Oct 22  2025 sbin -> bin
+drwxr-xr-x. 1 root root  38 Oct 22  2025 share
+drwxr-xr-x. 1 root root   0 Jul 29  2025 src
+
+/usr/local/bin:
+total 4
+drwxr-xr-x. 1 root      root      12 May  5  2026 .
+drwxr-xr-x. 1 root      root      90 Oct 22  2025 ..
+-rwxr-xr-x. 1 minecraft minecraft 84 May  5  2026 ntwrkc
+
+/usr/bin/pip
+/usr/bin/pip3
+/usr/bin/flatpak
+
+Package                   Version
+------------------------- ------------
+acme                      5.7.0
+anyio                     4.13.0
+argcomplete               3.6.3
+attrs                     25.4.0
+Beaker                    1.12.1
+beautifulsoup4            4.15.0
+blivet                    3.12.1
+botocore                  1.43.122
+Brlapi                    0.8.7
+certbot                   5.7.0
+certbot-nginx             5.7.0
+certifi                   2025.7.9
+cffi                      2.0.0
+charset-normalizer        3.4.3
+click                     8.1.7
+cockpit                   368
+colorlog                  6.12.0
+ConfigArgParse            1.7.7
+configobj                 5.0.9
+crcmod                    1.7
+crypt_r                   3.13.1
+cryptography              46.0.7
+cupshelpers               1.0
+dasbus                    1.7
+dbus_next                 0.2.3
+dbus-python               1.4.0
+distro                    1.9.0
+dnf                       4.24.0
+docopt                    0.6.2
+evdev                     1.9.3
+fedora-third-party        0.10
+file-magic                0.4.0
+h11                       0.16.0
+hidapi                    0.14.0.post4
+html2text                 2025.4.15
+httpcore                  1.0.9
+httpx                     0.28.1
+humanize                  4.13.0
+idna                      3.18
+iso639                    0.1.4
+jmespath                  1.0.1
+josepy                    2.0.0
+jsonschema                4.23.0
+jsonschema-specifications 2024.10.1
+langtable                 0.0.71
+libcomps                  0.1.23
+libdnf                    0.75.0
+libdnf5                   5.2.18.0
+
+bash: line 1: npm: command not found
+
+Mesa	org.freedesktop.Platform.GL.default	25.3.5	25.08	system
+Mesa (Extra)	org.freedesktop.Platform.GL.default	25.3.5	25.08-extra	system
+Intel VAAPI driver	org.freedesktop.Platform.VAAPI.Intel		25.08	system
+Codecs Extra Extension	org.freedesktop.Platform.codecs-extra		25.08-extra	system
+Adwaita theme	org.kde.KStyle.Adwaita		6.10	system
+KDE Application Platform	org.kde.Platform		6.10	system
+Prism Launcher	org.prismlauncher.PrismLauncher	10.0.5	stable	system

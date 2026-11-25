@@ -1,0 +1,37 @@
+# Listening sockets on the source, from `ss -tlnp` (2026-11-23)
+# address:port       process              notes
+127.0.0.53:53        systemd-resolved     DNS stub
+127.0.0.54:53        systemd-resolved     DNS stub (alternate)
+0.0.0.0:22           sshd                 OpenSSH
+[::]:22              sshd
+0.0.0.0:80           nginx                HTTP (redirects to HTTPS)
+[::]:80              nginx
+0.0.0.0:443          nginx                HTTPS
+[::]:443             nginx
+127.0.0.1:631        cupsd                local printing (not needed on server)
+[::1]:631            cupsd
+0.0.0.0:5355         systemd-resolved     LLMNR
+[::]:5355            systemd-resolved
+0.0.0.0:8080         docker-proxy         Guacamole web UI
+[::]:8080            docker-proxy
+*:9090               cockpit-tls          Cockpit web UI
+*:25565              java                 Minecraft server
+127.0.0.1:4330       pmlogger             PCP
+[::1]:4330           pmlogger
+127.0.0.1:44321      pmcd                 PCP
+[::1]:44321          pmcd
+127.0.0.1:11987      coolercontrold       CoolerControl API
+[::1]:11987          coolercontrold
+127.0.0.1:11988      coolercontrold       CoolerControl API (TLS)
+[::1]:11988          coolercontrold
+127.0.0.1:41299      containerd           containerd gRPC
+
+# Internal container ports (not published on the host):
+#   guac-mysql: 3306/tcp, 33060/tcp
+#   guacd:      4822/tcp
+#
+# Configured but NOT listening:
+#   BlueMap:    127.0.0.1:8100  (bluemap.jar is disabled)
+#   Dynmap:     8123            (dynmap.jar is disabled)
+#   RCON:       25575           (enable-rcon=false)
+#   MySQL:      3306            (only inside the guac-mysql container)

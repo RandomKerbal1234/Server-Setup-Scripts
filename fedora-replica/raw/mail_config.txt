@@ -1,0 +1,52 @@
+#defaults
+
+defaults
+auth on
+tls on
+tls_starttls on
+tls_trust_file /etc/pki/tls/certs/ca-bundle.crt
+logfile ~/.msmtp.log
+
+#gmail
+
+account gmail
+host smtp.gmail.com
+port 587
+from reykrioukov@gmail.com
+user reykrioukov@gmail.com
+passwordeval "echo vvxfkfkbokpmcood"
+
+account default : gmail
+
+#IMAP
+set imap_user = "reykrioukov@gmail.com"
+set imap_pass = "vvxfkfkbokpmcood"
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set record = "+[Gmail]/Sent Mail"
+set postponed = "+[Gmail]/Drafts"
+set trash = "+[Gmail/Trash"
+
+#SMTP
+set sendmail = "/usr/bin/msmtp"
+set use_envelope_from = yes
+#set smtp_url = "smtp://reykrioukov@gmail.com@smtp.gmail.com:587/"
+#set smtp_pass = "vvxfkfkbokpmcood"
+
+#SSL
+set ssl_force_tls = yes
+set ssl_starttls = yes
+
+#Identity
+set from = "reykrioukov@gmail.com"
+set realname = "Andrey Krioukov"
+set use_from = yes
+
+#Behavior
+set mail_check = 60
+set timeout = 15
+set copy = yes
+set move = no
+
+set editor = "vim"
+set charset = "utf-8"

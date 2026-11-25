@@ -1,0 +1,47 @@
+NAME="Fedora Linux"
+VERSION="43 (Workstation Edition)"
+RELEASE_TYPE=stable
+ID=fedora
+VERSION_ID=43
+VERSION_CODENAME=""
+PRETTY_NAME="Fedora Linux 43 (Workstation Edition)"
+ANSI_COLOR="0;38;2;60;110;180"
+LOGO=fedora-logo-icon
+CPE_NAME="cpe:/o:fedoraproject:fedora:43"
+DEFAULT_HOSTNAME="fedora"
+HOME_URL="https://fedoraproject.org/"
+DOCUMENTATION_URL="https://docs.fedoraproject.org/en-US/fedora/f43/"
+SUPPORT_URL="https://ask.fedoraproject.org/"
+BUG_REPORT_URL="https://bugzilla.redhat.com/"
+REDHAT_BUGZILLA_PRODUCT="Fedora"
+REDHAT_BUGZILLA_PRODUCT_VERSION=43
+REDHAT_SUPPORT_PRODUCT="Fedora"
+REDHAT_SUPPORT_PRODUCT_VERSION=43
+SUPPORT_END=2026-12-02
+VARIANT="Workstation Edition"
+VARIANT_ID=workstation
+
+Linux fedora 7.3.3-100.fc43.x86_64 #1 SMP PREEMPT_DYNAMIC Fri Nov  6 22:01:39 UTC 2026 x86_64 GNU/Linux
+
+  Transient hostname: fedora
+     Static hostname: (unset)
+           Icon name: computer-desktop
+             Chassis: desktop 🖥️
+          Machine ID: e251dbe0cb974a98b456a31c9bf0510f
+             Boot ID: b2dea2b2a70c4af8a959447c2187a100
+    Operating System: Fedora Linux 43 (Workstation Edition)
+         CPE OS Name: cpe:/o:fedoraproject:fedora:43
+      OS Support End: Wed 2026-12-02
+OS Support Remaining: 1w 1d
+              Kernel: Linux 7.3.3-100.fc43.x86_64
+        Architecture: x86-64
+     Hardware Vendor: Dell Inc.
+      Hardware Model: OptiPlex 9010
+    Hardware Version: 01
+    Firmware Version: A13
+       Firmware Date: Wed 2013-03-27
+        Firmware Age: 13y 7month 4w
+
+BOOT_IMAGE=(hd0,gpt2)/vmlinuz-7.3.3-100.fc43.x86_64 root=UUID=ccf7a767-b3de-40e9-b953-3d0a49ac5880 ro rootflags=subvol=root rhgb quiet
+
+graphical.target

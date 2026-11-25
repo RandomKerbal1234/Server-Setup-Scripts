@@ -1,0 +1,70 @@
+# fedora-replica manifest
+
+Source host: Fedora Linux 43 Workstation, `noadminabusearda.opik.net`
+Bundle root: `fedora-replica/`
+Checksums:   `MANIFEST.sha256` (non-secret, non-raw files), `secrets/SHA256SUMS`
+
+## Top level
+
+| Path | Files | Purpose |
+| --- | --- | --- |
+| `apply.sh` | 1 | orchestrator; dry run by default |
+| `verify.sh` | 1 | read-only post-install verification |
+| `lib.sh` | 1 | shared helpers |
+| `steps/` | 12 | one script per subsystem (00 through 99) |
+| `inventory/` | 26 | source description, reference files, package/unit/port lists |
+| `etc/` | 26 | curated `/etc` overlay (nginx, cockpit, firewalld, CoolerControl, Samba, tlog, sensors, repos) |
+| `docker/guac-mysql/` | 3 | redacted compose file, `.env.example`, Guacamole schema |
+| `web/files/` | 2 | `/var/www/files` nginx config copies |
+| `minecraft/` | 117 | Fabric jar, 39 mods, configs, Dynmap configs, serverconfig, unit |
+| `scripts/` | 2 | mod dedupe, manifest generator |
+| `extras/` | 1 | optional `/usr/local/bin/ntwrkc` helper (not installed) |
+| `secrets/` | 43 | sensitive material; mode 700; see `secrets/README.md` |
+| `raw/` | - | collected source output and tarballs; mode 700; not distributed |
+
+## Steps
+
+| Step | Subsystem |
+| --- | --- |
+| `00-preflight.sh` | safety and resource checks |
+| `10-packages.sh` | dnf package set |
+| `20-system.sh` | hostname, time, locale, tuned, SELinux, timers, tlog, sensors, Samba |
+| `30-users.sh` | andrey, minecraft, optional mom/ml |
+| `40-firewall.sh` | FedoraWorkstation zone, Docker zone/policy |
+| `50-nginx.sh` | sites, `/var/www/files`, TLS, certbot |
+| `60-cockpit.sh` | Cockpit config and socket |
+| `70-coolercontrol.sh` | COPR, daemon config, optional secrets |
+| `80-docker.sh` | Guacamole stack and schema |
+| `90-minecraft.sh` | Fabric server files and unit |
+| `95-services.sh` | enable/start units and timers |
+| `99-summary.sh` | status and post-install checklist |
+
+## Inventory
+
+| File | Topic |
+| --- | --- |
+| `inventory/README.md` | index and source identity |
+| `inventory/01-system.md` | OS, hardware, time, tuned, SELinux |
+| `inventory/02-packages.md` | repositories and package set |
+| `inventory/03-services.md` | units and ports |
+| `inventory/04-network.md` | interfaces, Wi-Fi, firewalld, Docker networking |
+| `inventory/05-storage.md` | btrfs/ext4, fstab, zram |
+| `inventory/06-users.md` | users, groups, UIDs |
+| `inventory/07-web.md` | nginx, TLS, Cockpit, certbot |
+| `inventory/08-docker.md` | Docker and Guacamole |
+| `inventory/09-minecraft.md` | Fabric server and mods |
+| `inventory/10-exclusions.md` | data deliberately not copied |
+| `inventory/11-differences.md` | caveats and known quirks |
+| `inventory/packages-userinstalled.txt` | full user-installed package list |
+| `inventory/packages-relevant.txt` | service-relevant package versions |
+| `inventory/units-enabled.txt` | enabled units on the source |
+| `inventory/ports.txt` | listening sockets |
+| `inventory/etc-unowned.txt` | unowned `/etc` files |
+| `inventory/etc-modified.txt` | modified RPM-owned `/etc` files |
+| `inventory/reference/` | fstab, GRUB, kernel cmdline, broken unit, sshd_config, `ss`, Minecraft tree |
+
+## Regenerate checksums
+
+```bash
+./scripts/make-manifest.sh
+```

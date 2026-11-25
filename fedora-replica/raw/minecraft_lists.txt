@@ -1,0 +1,118 @@
+===== mods
+total 99956
+drwxrwxrwx. 1 minecraft minecraft     2098 Nov 13 13:25 .
+drwxr-xr-x. 1 minecraft minecraft      530 Nov 21 18:15 ..
+-rwxrwxrwx. 1 root      root       7337589 Apr 17  2026 anticheat.jar.disabled
+-rwxrwxrwx. 1 root      root        147414 Apr 17  2026 antixray.jar
+-rwxrwxrwx. 1 minecraft minecraft   180107 Apr  1  2026 appleskin-fabric-mc1.21.11-3.0.8.jar
+-rwxrwxrwx. 1 minecraft minecraft  1610665 Apr  1  2026 baritone-meteor-1.21.11.jar.disabled
+-rwxrwxrwx. 1 root      root       6507149 Feb 13  2026 bluemap.jar.disabled
+-rwxrwxrwx. 1 minecraft minecraft  4687147 Apr  1  2026 c2me-fabric-mc1.21.11-0.3.6.0.0.jar
+-rwxrwxrwx. 1 minecraft minecraft   438516 Apr  1  2026 chunksfadein-fabric-3.0.20-1.21.11.jar
+-rwxrwxrwx. 1 minecraft minecraft   355288 Apr  1  2026 Chunky-Fabric-1.4.55.jar
+-rwxrwxrwx. 1 minecraft minecraft   334223 Apr  1  2026 clientsort-fabric-2.1.6+1.21.11.jar
+-rwxrwxrwx. 1 minecraft minecraft  1148427 Apr  1  2026 cloth-config-21.11.153-fabric.jar
+-rw-r--r--. 1 minecraft minecraft 11636159 Jan 14  2026 dynmap.jar.disabled
+-rwxr-xr-x. 1 minecraft minecraft       75 Apr 18  2026 enable-disable.sh
+-rwxrwxrwx. 1 minecraft minecraft  2387975 Apr  1  2026 fabric-api-0.140.0+1.21.11.jar
+-rwxrwxrwx. 1 minecraft minecraft  2412410 Apr  1  2026 fabric-api-0.141.2+1.21.11.jar
+-rwxrwxrwx. 1 minecraft minecraft    77269 Apr  1  2026 ferritecore-8.0.3-fabric.jar
+-rwxrwxrwx. 1 minecraft minecraft    80138 Apr  1  2026 ferritecore-8.2.0-fabric.jar
+-rwxrwxrwx. 1 root      root        922929 Dec 28  2025 flan.jar.disabled
+-rwxrwxrwx. 1 minecraft minecraft   598009 Apr  1  2026 ForgeConfigAPIPort-v21.11.1-mc1.21.11-Fabric.jar
+-rw-r--r--. 1 minecraft minecraft   825025 Dec 12  2025 grave.jar
+-rwxrwxrwx. 1 minecraft minecraft  2795436 Apr  1  2026 iris-fabric-1.10.4+mc1.21.11.jar
+-rwxrwxrwx. 1 minecraft minecraft  2798880 Apr  1  2026 iris-fabric-1.10.5+mc1.21.11.jar
+-rwxrwxrwx. 1 minecraft minecraft   944560 Apr  1  2026 Jade-1.21.11-Fabric-21.1.1.jar
+-rwxrwxrwx. 1 minecraft minecraft  1520445 Apr  1  2026 jei-1.21.11-fabric-27.4.0.15.jar
+-rwxrwxrwx. 1 minecraft minecraft  7796348 Mar 26  2026 kotlin.jar
+-rwxrwxrwx. 1 root      root      20058399 Feb  1  2026 ledger.jar
+-rwxrwxrwx. 1 minecraft minecraft  4742803 Apr  1  2026 meteor-client-1.21.11-48.jar.disabled
+-rwxrwxrwx. 1 minecraft minecraft  1081654 Apr  1  2026 modmenu-17.0.0-alpha.1.jar
+-rwxrwxrwx. 1 minecraft minecraft  1115052 Apr  1  2026 modmenu-17.0.0-beta.2.jar
+-rwxrwxrwx. 1 minecraft minecraft  1378896 Apr  1  2026 opac.jar.disabled
+-rwxrwxrwx. 1 minecraft minecraft   267926 Apr  1  2026 placeholder-api-2.8.1+1.21.10.jar
+-rw-r--r--. 1 minecraft minecraft  1485870 Feb  1  2026 plymer-core.jar
+-rwxrwxrwx. 1 minecraft minecraft  1876396 Apr  1  2026 sodium-fabric-0.8.2+mc1.21.11.jar
+-rwxrwxrwx. 1 minecraft minecraft  1868185 Apr  1  2026 sodium-fabric-0.8.3+mc1.21.11.jar
+-rwxrwxrwx. 1 minecraft minecraft  1867803 Apr  1  2026 sodium-fabric-0.8.4+mc1.21.11.jar
+-rwxrwxrwx. 1 minecraft minecraft   203479 Apr  1  2026 sound-physics-remastered-fabric-1.21.11-1.5.1.jar
+-rw-r--r--. 1 minecraft minecraft  3921256 Mar 26  2026 spark-profiler.jar
+-rwxrwxrwx. 1 minecraft minecraft  1299976 Apr  1  2026 vanish-1.6.6+1.21.11.jar
+-rwxrwxrwx. 1 minecraft minecraft  2133305 Apr  1  2026 xminimap.jar.disabled
+-rwxrwxrwx. 1 minecraft minecraft  1426980 Apr  1  2026 xworldmap.jar.disabled
+
+===== config
+total 80
+drwxr-xr-x. 1 minecraft minecraft   528 Nov 21 17:57 .
+drwxr-xr-x. 1 minecraft minecraft   530 Nov 21 18:15 ..
+-rw-r--r--. 1 minecraft minecraft   828 Apr 17  2026 antixray.toml
+drwxr-xr-x. 1 minecraft minecraft   124 Nov 13 13:24 bluemap
+drwxr-xr-x. 1 minecraft minecraft    20 Apr 17  2026 bStats
+-rw-r--r--. 1 minecraft minecraft  9257 Nov 21 17:57 c2me.toml
+drwxr-xr-x. 1 minecraft minecraft    32 Apr  2  2026 chunky
+-rw-r--r--. 1 minecraft minecraft  1220 Nov 21 17:57 clientsort-server.json
+-rw-r--r--. 1 minecraft minecraft  1591 Nov 21 17:57 ferritecore.mixin.properties
+drwxr-xr-x. 1 minecraft minecraft    32 Apr 18  2026 flan
+-rw-r--r--. 1 minecraft minecraft   517 Nov 21 17:57 forgeconfigapiport.toml
+drwxr-xr-x. 1 minecraft minecraft   130 Apr 18  2026 GrimAC
+drwxr-xr-x. 1 minecraft minecraft    86 Apr  2  2026 jade
+-rw-r--r--. 1 minecraft minecraft  1887 Apr 18  2026 ledger.toml
+-rw-r--r--. 1 minecraft minecraft    29 Apr 18  2026 lingua_bib.json
+-rw-r--r--. 1 minecraft minecraft 37199 Apr  2  2026 openpartiesandclaims-server.toml
+drwxr-xr-x. 1 minecraft minecraft   140 Apr 21  2026 polymer
+drwxr-xr-x. 1 minecraft minecraft    46 Apr  1  2026 sound_physics_remastered
+drwxr-xr-x. 1 minecraft minecraft    54 Apr 23  2026 spark
+drwxr-xr-x. 1 minecraft minecraft    62 May  6  2026 universal-graves
+-rw-r--r--. 1 minecraft minecraft  1485 Nov 21 17:57 vanish.hocon
+drwxr-xr-x. 1 minecraft minecraft   100 Apr  1  2026 voicechat
+drwxr-xr-x. 1 minecraft minecraft    38 Apr  1  2026 xaero
+
+===== defaultconfigs
+total 0
+drwxr-xr-x. 1 minecraft minecraft   0 Apr  1  2026 .
+drwxr-xr-x. 1 minecraft minecraft 530 Nov 21 18:15 ..
+
+===== unusedmods
+total 11364
+drwxr-xr-x. 1 minecraft minecraft       58 Apr 12  2026 .
+drwxr-xr-x. 1 minecraft minecraft      530 Nov 21 18:15 ..
+-rw-r--r--. 1 minecraft minecraft 11636159 Apr 12  2026 Dynmap-3.8-fabric-1.21.11.jar
+
+===== bluemap
+total 4
+drwxr-xr-x. 1 minecraft minecraft  38 Nov 13 13:25 .
+drwxr-xr-x. 1 minecraft minecraft 530 Nov 21 18:15 ..
+-rw-r--r--. 1 minecraft minecraft 176 Nov 13 13:25 pluginState.json
+drwxr-xr-x. 1 minecraft minecraft   8 Nov 13 13:25 web
+
+===== dynmap
+total 184
+drwxr-xr-x. 1 minecraft minecraft   594 Apr 18  2026 .
+drwxr-xr-x. 1 minecraft minecraft   530 Nov 21 18:15 ..
+drwxr-xr-x. 1 minecraft minecraft   280 Apr  6  2026 colorschemes
+-rw-r--r--. 1 minecraft minecraft 21537 Apr 18  2026 configuration.txt
+-rw-r--r--. 1 minecraft minecraft   149 Apr  6  2026 custom-lightings.txt
+-rw-r--r--. 1 minecraft minecraft   156 Apr  6  2026 custom-perspectives.txt
+-rw-r--r--. 1 minecraft minecraft   146 Apr  6  2026 custom-shaders.txt
+drwxr-xr-x. 1 minecraft minecraft     0 Apr  6  2026 export
+-rw-r--r--. 1 minecraft minecraft   422 Apr 19  2026 fabricworlds.yml
+-rw-r--r--. 1 minecraft minecraft     6 Apr 18  2026 hiddenplayers.txt
+-rw-r--r--. 1 minecraft minecraft   134 Apr 19  2026 ids-by-ip.txt
+drwxr-xr-x. 1 minecraft minecraft     0 Apr  6  2026 import
+-rw-r--r--. 1 minecraft minecraft  4941 Apr  6  2026 lightings.txt
+drwxr-xr-x. 1 minecraft minecraft     0 Apr  6  2026 markers
+-rw-r--r--. 1 minecraft minecraft   298 Apr  6  2026 markers.yml
+-rw-r--r--. 1 minecraft minecraft   909 Apr  6  2026 permissions.yml.example
+-rw-r--r--. 1 minecraft minecraft 10933 Apr  6  2026 perspectives.txt
+drwxr-xr-x. 1 minecraft minecraft    32 Apr  6  2026 renderdata
+-rw-r--r--. 1 minecraft minecraft  5803 Apr  6  2026 shaders.txt
+drwxr-xr-x. 1 minecraft minecraft   794 Apr  6  2026 templates
+drwxr-xr-x. 1 minecraft minecraft    16 Apr  6  2026 texturepacks
+-rw-r--r--. 1 minecraft minecraft    17 Apr  6  2026 version.txt
+drwxr-xr-x. 1 minecraft minecraft   248 Apr  6  2026 web
+-rw-r--r--. 1 minecraft minecraft 86808 Apr 19  2026 world.pending
+-rw-r--r--. 1 minecraft minecraft  4949 Apr  6  2026 worlds.txt
+
+===== plugins?
+ls: cannot access '/home/minecraft/server/plugins': No such file or directory

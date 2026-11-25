@@ -1,0 +1,36 @@
+Include /etc/ssh/sshd_config.d/*.conf
+AuthorizedKeysFile	.ssh/authorized_keys
+Subsystem	sftp	/usr/libexec/openssh/sftp-server
+
+total 8
+drwx------. 1 root root  88 Oct 21 20:00 .
+drwxr-xr-x. 1 root root 344 Sep 14 20:00 ..
+-rw-------. 1 root root 412 Oct 21 20:00 40-redhat-crypto-policies.conf
+-rw-------. 1 root root 360 Oct 21 20:00 50-redhat.conf
+===== /etc/ssh/sshd_config.d/40-redhat-crypto-policies.conf
+# This system is following system-wide crypto policy. The changes to
+# crypto properties (Ciphers, MACs, ...) will not have any effect in
+# this or following included files. To override some configuration option,
+# write it before this block or include it before this file.
+# Please, see manual pages for update-crypto-policies(8) and sshd_config(5).
+Include /etc/crypto-policies/back-ends/opensshserver.config
+
+===== /etc/ssh/sshd_config.d/50-redhat.conf
+SyslogFacility AUTHPRIV
+
+KbdInteractiveAuthentication no
+
+GSSAPIAuthentication yes
+GSSAPICleanupCredentials no
+
+UsePAM yes
+
+X11Forwarding yes
+
+# rhbz#2352653 - accept COLORTERM
+	AcceptEnv COLORTERM
+
+# It is recommended to use pam_motd in /etc/pam.d/sshd instead of PrintMotd,
+# as it is more configurable and versatile than the built-in version.
+PrintMotd no
+
